@@ -11,6 +11,7 @@ import leetcode from "../assets/social/leetcode.png"
 import mail from "../assets/social/Gmail Logo.png"
 import whatsapp from "../assets/social/WhatsApp.png"
 import Skills from "./Skills";
+import Project from "./Project";
 
 function Home() {
   return (
@@ -70,6 +71,8 @@ function Home() {
         {/* skills section started */}
 
         <Skills />
+       <Project/>
+       
       </div>
     </>
   );
