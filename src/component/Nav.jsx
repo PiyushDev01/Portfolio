@@ -23,10 +23,10 @@ function Nav() {
             className="bg-slate-500 w-12 my-2 md:my-0 md:w-[3.5rem] md:h-[3.5rem] rounded-full"
           ></img>
           <ul className="hidden md:flex flex-row gap-16 px-4 font-fira text-slate-100 font-medium">
-            <li>{"</Home>"}</li>
-            <li>{"</Aboutme>"}</li>
-            <li>{"</Skills>"}</li>
-            <li>{"</Projects>"}</li>
+            <li className=" transition-all cursor-pointer">{"</Home>"}</li>
+            <li className=" transition-all cursor-pointer">{"</Aboutme>"}</li>
+            <li className=" transition-all cursor-pointer">{"</Skills>"}</li>
+            <li className=" transition-all cursor-pointer">{"</Projects>"}</li>
           </ul>
           <img 
             src={menu}
