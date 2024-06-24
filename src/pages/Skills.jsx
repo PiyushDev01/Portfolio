@@ -38,7 +38,7 @@ function Skills() {
   return (
     <div
       id="container"
-      className="flex flex-col w-full h-fit px-10 md:py-10 md:px-40"
+      className="flex flex-col w-full h-fit px-6 md:py-10 md:px-40 mb-10 "
     >
       <motion.h1
         variants={fadeIn("up", 0.3)}
@@ -46,7 +46,7 @@ function Skills() {
         whileInView={"show"}
         viewport={{ once: false, amount: 0.1 }}
         id="skill"
-        className="font-fira text-1xl md:text-4xl py-3 w-full h-10 gap-4 text-slate-100 font-light flex items-center"
+        className="font-fira text-1xl md:text-4xl py-8 w-full h-10 gap-4 text-slate-100 font-light flex items-center"
       >
         {`<Skills/>`}{" "}
         <div className=" w-60 md:w-[80%] h-[0.1rem] bg-slate-50"></div>

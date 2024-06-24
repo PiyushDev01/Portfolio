@@ -19,7 +19,7 @@ function Home() {
       <div id="home" className=" flex flex-col relative bg-[#11111b] w-full pt-[10rem] h-fit ">
         <div
           id="hero"
-          className="flex flex-col md:flex-row w-full h-[100vh] px-10 md:py-10 md:px-40"
+          className="flex flex-col md:flex-row w-full h-fit px-10 md:py-10 md:px-40"
         >
           <div id="hero" className=" md:w-4/6 ">
             <h1 className=" font-fira text-1xl md:text-4xl py-3 text-slate-100 font-semibold">{`Namaste(); I'm`}</h1>
@@ -56,7 +56,7 @@ function Home() {
             </div>
           </div>
 
-          <div id="sideImage" className="py-14 px-4 w-full h-full md:w-2/6  ">
+          <div id="sideImage" className="py-16 px-4 w-full h-full md:w-2/6  ">
             <div className=" backimage flex justify-center rotate-6 rounded-2xl bg-slate-700">
               <img
                 src={image}
