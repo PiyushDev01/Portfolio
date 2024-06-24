@@ -23,9 +23,9 @@ function Nav() {
             className="bg-slate-500 w-12 my-2 md:my-0 md:w-[3.5rem] md:h-[3.5rem] rounded-full"
           ></img>
           <ul className="hidden md:flex flex-row gap-16 px-4 font-fira text-slate-100 font-medium">
-            <li className=" transition-all cursor-pointer">{"</Home>"}</li>
+            <a href="#home"><li className=" transition-all cursor-pointer">{"</Home>"}</li></a>
             <li className=" transition-all cursor-pointer">{"</Aboutme>"}</li>
-            <li className=" transition-all cursor-pointer">{"</Skills>"}</li>
+            <a href="#skill"><li className=" transition-all cursor-pointer">{"</Skills>"}</li></a>
             <li className=" transition-all cursor-pointer">{"</Projects>"}</li>
           </ul>
           <img 
@@ -40,10 +40,10 @@ function Nav() {
           style={{ height: toggle ? "320px" : "0px" }}
           className=" overflow-hidden  flex items-center justify-center  transition-all -z-10 rounded-b-[3rem] md:hidden top-[2rem] absolute w-4/5 bg-white/5 backdrop-blur-sm"
         >
-          <ul className="flex items-center justify-center gap-8 flex-col font-fira text-slate-50 text-lg ">
-            <li>{"</Home>"}</li>
+          <ul onClick={handletoggle} className="flex items-center justify-center gap-8 flex-col font-fira text-slate-50 text-lg ">
+            <a href="#home"><li>{"</Home>"}</li></a>
             <li>{"</Aboutme>"}</li>
-            <li>{"</Skills>"}</li>
+            <a href="#skill"><li>{"</Skills>"}</li></a>
             <li>{"</Projects>"}</li>
           </ul>
         </div>

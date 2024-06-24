@@ -16,9 +16,9 @@ function Home() {
   return (
     <>
       <Nav />
-      <div className=" flex flex-col relative bg-[#11111b] w-full pt-[10rem] h-fit ">
+      <div id="home" className=" flex flex-col relative bg-[#11111b] w-full pt-[10rem] h-fit ">
         <div
-          id="container"
+          id="hero"
           className="flex flex-col md:flex-row w-full h-[100vh] px-10 md:py-10 md:px-40"
         >
           <div id="hero" className=" md:w-4/6 ">
