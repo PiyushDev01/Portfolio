@@ -51,8 +51,8 @@ function Home() {
             <a href="https://github.com/piyushSharma689" target="_blank"><img  className=" w-8" src={github} alt="" /></a>
             <a href="https://leetcode.com/u/piyush6883/" target="_blank"><img  className=" w-8" src={leetcode} alt="" /></a>
             <a href="https://www.instagram.com/im_artifex?igsh=dW0yZGN3NHNzNTM3" target="_blank"><img  className=" w-8" src={insta} alt="" /></a>
-            <a href="mailto:piyushvishwakarma@gmail.com" target="_blank"><img  className=" w-8" src={mail} alt="" /></a>
-            <a href="https://wa.me/+916392802689?text=Hello%2C%20I%20have%20a%20question." target="_blank"><img  className=" w-8" src={whatsapp} alt="" /></a>
+            <a href="mailto:piyushvishwakarma6706@gmail.com" target="_blank"><img  className=" w-8" src={mail} alt="" /></a>
+            <a href="https://wa.me/+916392802689?text=Hello." target="_blank"><img  className=" w-8" src={whatsapp} alt="" /></a>
             </div>
           </div>
 
