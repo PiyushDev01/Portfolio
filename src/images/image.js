@@ -12,20 +12,14 @@ import fire from "../assets/skills/Firebase.png";
 import git from "../assets/skills/git.png";
 import github from "../assets/skills/GitHub.png";
 import Node from "../assets/skills/Node.js.png";
+import image from "../assets/profile.png";
+import linkedin from "../assets/social/LinkedIn.png"
+import github1 from "../assets/social/GitHub.png"
+import insta from "../assets/social/insta.png"
+import leetcode from "../assets/social/leetcode.png"
+import mail from "../assets/social/Gmail Logo.png"
+import whatsapp from "../assets/social/WhatsApp.png"
 
 export {
-  html,
-  css,
-  js,
-  react,
-  c,
-  figma,
-  java,
-  tailwind,
-  vite,
-  boot,
-  fire,
-  git,
-  github,
-  Node,
+  html,css,js,react,c,figma,java,tailwind,vite,boot,fire,git,github,Node,image,linkedin,github1,insta,leetcode,mail,whatsapp
 };

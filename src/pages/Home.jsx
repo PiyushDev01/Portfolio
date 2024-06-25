@@ -3,15 +3,11 @@ import Nav from "../component/Nav";
 import download from "../assets/downloadicon.png";
 import "./home.css";
 import resume from "./Piyush_Vishwakarma.pdf";
-import image from "../assets/profile.png";
-import linkedin from "../assets/social/LinkedIn.png"
-import github from "../assets/social/GitHub.png"
-import insta from "../assets/social/insta.png"
-import leetcode from "../assets/social/leetcode.png"
-import mail from "../assets/social/Gmail Logo.png"
-import whatsapp from "../assets/social/WhatsApp.png"
+
 import Skills from "./Skills";
 import Project from "./Project";
+import Footer from "./Footer";
+import { image,linkedin,github1,insta,leetcode,mail,whatsapp } from "../images/image";
 
 function Home() {
   return (
@@ -49,7 +45,7 @@ function Home() {
             </a>
             <div id="social" className=" flex py-5 gap-6 cursor-pointer">
             <a href="https://www.linkedin.com/in/artifexpiyush/" target="_blank"><img  className=" w-8" src={linkedin} alt="" /></a>
-            <a href="https://github.com/piyushSharma689" target="_blank"><img  className=" w-8" src={github} alt="" /></a>
+            <a href="https://github.com/piyushSharma689" target="_blank"><img  className=" w-8" src={github1} alt="" /></a>
             <a href="https://leetcode.com/u/piyush6883/" target="_blank"><img  className=" w-8" src={leetcode} alt="" /></a>
             <a href="https://www.instagram.com/im_artifex?igsh=dW0yZGN3NHNzNTM3" target="_blank"><img  className=" w-8" src={insta} alt="" /></a>
             <a href="mailto:piyushvishwakarma6706@gmail.com" target="_blank"><img  className=" w-8" src={mail} alt="" /></a>
@@ -72,6 +68,7 @@ function Home() {
 
         <Skills />
        <Project/>
+       <Footer/>
        
       </div>
     </>
