@@ -6,20 +6,20 @@ import fadeIn from "../framer/fadein.js";
 import {html,css,js,react,c,figma,java,tailwind,vite,boot, fire,git,github,Node,} from "../images/image.js";
 
 const skills = {
-  HTML: html,
-  CSS3: css,
-  JS: js,
-  React: react,
-  Figma: figma,
-  Tailwind: tailwind,
-  Vite: vite,
-  Bootstrap: boot,
-  C: c,
-  Java: java,
-  Firebase: fire,
-  Nodejs: Node,
-  GitHub: github,
-  Git: git
+  HTML: [html,1],
+  CSS3: [css,1],
+  JS: [js,2],
+  React: [react,2],
+  Figma: [figma,1],
+  Tailwind: [tailwind,1],
+  Vite: [vite,1],
+  Bootstrap: [boot,2],
+  C: [c,2],
+  Java: [java,2],
+  Firebase: [fire,2],
+  Nodejs: [Node,3],
+  GitHub: [github,2],
+  Git: [git,1]
 };
 
 function Skills() {
@@ -54,7 +54,7 @@ function Skills() {
       >
         {/* <h1 className=' w-32 h-32 p-2 md:m-4 m-4 bg-purple-500'>hello</h1> */}
         {Object.entries(skills).map(([key, value]) => {
-          return <Techstack title={key} image={value} />;
+          return <Techstack title={key} image={value[0]} l={value[1]} />;
         })}
       </div>
     </div>
