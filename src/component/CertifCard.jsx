@@ -32,7 +32,7 @@ function CertifCard(props) {
             </div>
             <h1  className="font-ubuntu text-xl md:text-2xl text-slate-100 " >{title}</h1>
             <p className=' text-slate-400 font-ubuntu ' >{disc}</p>
-             <a href={link} target='_blank'> <button className=' flex gap-2 items-center my-4 transition-all hover:border-purple-400 border-transparent border-2 bg-orange-500 w-fit px-4 py-2 rounded-xl bg-mybg text-zinc-200 font-ubuntu font-extralight ' >Show Credential <span className=' text-xl text-purple-500 '>&#8599;</span> </button></a>
+             <a href={link} target='_blank'> <button className=' flex gap-2 items-center my-4 transition-all hover:border-purple-400 border-transparent border-2 w-fit px-4 py-2 rounded-xl bg-mybg text-zinc-200 font-ubuntu font-extralight ' >Show Credential <span className=' text-xl text-purple-500 '>&#8599;</span> </button></a>
 
     </motion.div>
     </>
