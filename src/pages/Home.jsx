@@ -8,6 +8,7 @@ import Skills from "./Skills";
 import Project from "./Project";
 import Footer from "./Footer";
 import { image,linkedin,github1,insta,leetcode,mail,whatsapp } from "../images/image";
+import Certification from "./Certification";
 
 function Home() {
   return (
@@ -68,8 +69,8 @@ function Home() {
 
         <Skills />
        <Project/>
+      <Certification/>
        <Footer/>
-       
       </div>
     </>
   );

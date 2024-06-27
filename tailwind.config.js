@@ -10,6 +10,9 @@ export default {
         'fira': ['Fira Code', 'monospace'],
         'ubuntu': ['Ubuntu', 'sans-serif'],
       },
+      colors: {
+        mybg: '#181827',
+      },
     },
   },
   plugins: [],

@@ -26,7 +26,7 @@ function Nav() {
             <a href="#home"><li className=" transition-all cursor-pointer">{"<Home/>"}</li></a>
             <a href="#skill"><li className=" transition-all cursor-pointer">{"<Skills/>"}</li></a>
            <a href="#projectcont"><li className=" transition-all cursor-pointer">{"<Projects/>"}</li></a> 
-            <li className=" transition-all cursor-pointer">{"<Certificates/>"}</li>
+           <a href="#certificatcont"><li className=" transition-all cursor-pointer">{"<Certificates/>"}</li></a> 
           </ul>
           <img 
             src={menu}
@@ -44,7 +44,7 @@ function Nav() {
             <a href="#home"><li>{"<Home/>"}</li></a>
             <a href="#skill"><li>{"<Skills/>"}</li></a>
             <a href="#projectcont"><li>{"<Projects/>"}</li></a>
-            <li>{"<Certificates/>"}</li>
+            <a href="#certificatcont"><li>{"<Certificates/>"}</li></a>
           </ul>
         </div>
       </div>
