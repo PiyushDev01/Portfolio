@@ -19,7 +19,8 @@ import insta from "../assets/social/insta.png"
 import leetcode from "../assets/social/leetcode.png"
 import mail from "../assets/social/Gmail Logo.png"
 import whatsapp from "../assets/social/WhatsApp.png"
+import py from "../assets/skills/Python.png"
 
 export {
-  html,css,js,react,c,figma,java,tailwind,vite,boot,fire,git,github,Node,image,linkedin,github1,insta,leetcode,mail,whatsapp
+  html,css,js,react,c,figma,java,tailwind,vite,boot,fire,git,github,Node, py,image,linkedin,github1,insta,leetcode,mail,whatsapp
 };

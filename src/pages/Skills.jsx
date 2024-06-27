@@ -3,7 +3,7 @@ import React from "react";
 import Techstack from "../component/Techstack";
 import { motion } from "framer-motion";
 import fadeIn from "../framer/fadein.js";
-import {html,css,js,react,c,figma,java,tailwind,vite,boot, fire,git,github,Node,} from "../images/image.js";
+import {html,css,js,react,c,figma,java,tailwind,vite,boot, fire,git,github,Node,py} from "../images/image.js";
 
 const skills = {
   HTML: [html,1],
@@ -18,6 +18,7 @@ const skills = {
   Java: [java,2],
   Firebase: [fire,2],
   Nodejs: [Node,3],
+  Python:[py,2],
   GitHub: [github,2],
   Git: [git,1]
 };
