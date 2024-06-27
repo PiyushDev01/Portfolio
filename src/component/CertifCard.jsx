@@ -31,8 +31,8 @@ function CertifCard(props) {
             <div id='icon' className=' w-fit h-fit p-2 bg-[#2f3245] rounded-xl border-2 border-slate-700  ' ><img src={img} className=' w-8 opacity-50' alt="" /></div>
             </div>
             <h1  className="font-ubuntu text-xl md:text-2xl text-slate-100 " >{title}</h1>
-            <p className=' text-slate-400 font-ubuntu ' >{disc}</p>
-             <a href={link} target='_blank'> <button className=' flex gap-2 items-center my-4 transition-all hover:border-purple-400 border-transparent border-2 w-fit px-4 py-2 rounded-xl bg-mybg text-zinc-200 font-ubuntu font-extralight ' >Show Credential <span className=' text-xl text-purple-500 '>&#8599;</span> </button></a>
+            <p className='text-sm md:text-lg font-ubuntu text-slate-400 ' >{disc}</p>
+             <a href={link} target='_blank'> <button className=' flex gap-2 items-center my-4 transition-all hover:border-purple-400 border-transparent border-2 w-fit px-4 py-2 rounded-xl text-sm md:text-base  bg-mybg text-zinc-200 font-ubuntu font-extralight ' >Show Credential <span className=' text-xl text-purple-500 '>&#8599;</span> </button></a>
 
     </motion.div>
     </>
