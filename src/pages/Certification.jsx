@@ -38,7 +38,7 @@ function Certification() {
           <div className=" w-60 md:w-[80%] h-[0.1rem] bg-slate-50"></div>
         </motion.h1>
 
-    <div id="certificats" className=" flex md:flex-row flex-col items-center justify-center md:px-20  w-full h-fit ">
+    <div id="certificats" className=" flex flex-col items-center justify-center md:px-20  w-full h-fit ">
 
         {
             Object.entries(certificatesDetail).map(([key, value])=>{
