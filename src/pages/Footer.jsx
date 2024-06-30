@@ -6,7 +6,7 @@ function Footer() {
   return (
     <>
     <div id="footcont" className=' w-full py-12 md:py-12 h-[21rem] md:h-[25rem] bg-gradient-to-t from-[#5a2a63] to-black flex flex-col items-center '>
-            <h1 className='font-fira text-1xl md:text-3xl py-3 text-slate-300 font-medium' >'Lerning, Living and Leveling Up'</h1>
+            <h1 className='font-fira text-1xl md:text-3xl py-3 text-slate-300 font-medium' >'Learning, Living and Leveling Up'</h1>
             <h1 className='font-fira text-1xl md:text-3xl py-3 text-transparent bg-gradient-to-r bg-clip-text from-purple-500 via-indigo-500 to-purple-500 font-medium'>GetinTouch();</h1>
             <div id="social" className=" flex py-5 gap-3 md:gap-6 cursor-pointer">
             <a href="https://www.linkedin.com/in/artifexpiyush/" target="_blank"><img  className="brightness-150 w-8" src={linkedin} alt="" /></a>
