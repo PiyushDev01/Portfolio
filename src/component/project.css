@@ -1,6 +1,6 @@
 #button {
     width: 9rem;
-    margin:  2rem 0;
+    margin:  1rem 0;
     padding: 10px 20px;
     border-radius: 50px;
     cursor: pointer;
@@ -37,3 +37,5 @@
   #certcontainer:hover{
     scale: 1.03;
   }
+
+  

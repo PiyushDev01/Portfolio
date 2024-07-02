@@ -1,15 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import git from "../assets/skills/GitHub.png";
 import "./project.css";
 import { motion } from "framer-motion";
 import fadeIn from "../framer/fadein.js";
-import { fire, react, tailwind, vite } from "../images/image.js";
+
 
 function Projectcomp(props) {
-  
-  // const techs = props.tech; 
-  const { title, image, dp, discr, link, gitlink, techs} = props;
-  
+  // const techs = props.tech;
+  const { title, image, dp, discr, link, gitlink, techs } = props;
+  const [isExpanded, setIsExpanded] = useState(false);
+
   return (
     <>
       <motion.div
@@ -18,7 +18,7 @@ function Projectcomp(props) {
         whileInView={"show"}
         viewport={{ once: false, amount: 0.1 }}
         id="maincont"
-        className=" my-16 flex flex-col md:flex-row w-[90%] md:w-[80%] h-fit bg-[#181827] overflow-hidden rounded-[3rem] border border-slate-600 "
+        className="md:my-16 my-8 flex flex-col md:flex-row w-[90%] md:w-[80%] h-fit bg-[#181827] overflow-hidden rounded-[2rem] md:rounded-[3rem] border border-slate-600 "
       >
         <div
           id="pleft"
@@ -28,14 +28,27 @@ function Projectcomp(props) {
           <h1 className="font-ubuntu text-2xl md:text-4xl text-slate-100 py-4">
             {title}
           </h1>
-          <p className="  text-sm md:text-sm font-ubuntu text-slate-400 ">
-            {discr}
-          </p>
+          <div
+      className={`relative overflow-hidden ${isExpanded ? 'h-auto' : 'h-10'}  `}
+      
+      onClick={() => setIsExpanded(!isExpanded)}
+    >
+      <p className="text-sm md:text-sm font-ubuntu text-slate-400">
+        {discr}
+      </p>
+      {!isExpanded && (
+        <div className="absolute inset-x-0 bottom-0 h-8 bg-gradient-to-b from-transparent to-[#181827] pointer-events-none"></div>
+      )}
+    </div>
+
           <div id="techstack" className=" flex gap-3">
-          {techs ? techs.map((item, index) => (
-          <img src={item} key={index} className="w-7 my-4" />
-        
-        )) : <div>No tech stack available</div>}
+            {techs ? (
+              techs.map((item, index) => (
+                <img src={item} key={index} className="w-7 my-4" />
+              ))
+            ) : (
+              <div>No tech stack available</div>
+            )}
           </div>
 
           <div id="buttons" className="flex flex-row items-center gap-6">
