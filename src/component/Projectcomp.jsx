@@ -7,18 +7,18 @@ import fadeIn from "../framer/fadein.js";
 
 function Projectcomp(props) {
   // const techs = props.tech;
-  const { title, image, dp, discr, link, gitlink, techs } = props;
+  const { title, image, dp, discr, link, gitlink, techs, mobile } = props;
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
     <>
       <motion.div
-        variants={fadeIn("up", 0.3)}
+        variants={fadeIn("up", 0.1)}
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.1 }}
         id="maincont"
-        className="md:my-16 my-8 flex flex-col md:flex-row w-[90%] md:w-[80%] h-fit bg-[#181827] overflow-hidden rounded-[2rem] md:rounded-[3rem] border border-slate-600 "
+        className=" my-8 flex flex-col md:flex-row w-[90%] md:w-[80%] h-fit bg-[#181827] overflow-hidden rounded-[2rem] md:rounded-[3rem] border border-slate-600 "
       >
         <div
           id="pleft"
@@ -29,11 +29,12 @@ function Projectcomp(props) {
             {title}
           </h1>
           <div
-      className={`relative overflow-hidden ${isExpanded ? 'h-auto' : 'h-10'}  `}
+      className={`relative overflow-hidden ${isExpanded ?'h-auto max-h-40' : 'h-10 max-h-10'} transition-height duration-300 ease-in  `}
+      // className={`relative overflow-hidden ${isExpanded ? 'h-auto max-h-40' : 'h-10 max-h-10'} transition-height duration-500 ease-in-out `}
       
       onClick={() => setIsExpanded(!isExpanded)}
     >
-      <p className="text-sm md:text-sm font-ubuntu text-slate-400">
+      <p className="text-sm md:text-sm  font-ubuntu text-slate-400">
         {discr}
       </p>
       {!isExpanded && (
@@ -44,7 +45,7 @@ function Projectcomp(props) {
           <div id="techstack" className=" flex gap-3">
             {techs ? (
               techs.map((item, index) => (
-                <img src={item} key={index} className="w-7 my-4" />
+                <img src={item} key={index} className="w-5  my-4  " />
               ))
             ) : (
               <div>No tech stack available</div>
@@ -64,12 +65,14 @@ function Projectcomp(props) {
             </a>
           </div>
         </div>
-        <div id="pright" className=" md:w-[50%] h-20  ">
+        <div id="pright" className=" md:w-[50%] h-20 relative  ">
           <img
             src={image}
             alt=""
-            className=" md:translate-y-[80%] -translate-y-5 translate-x-[10%] md:translate-x-[30%] rounded-[2rem] md:scale-150 "
+            className=" md:translate-y-[80%] -translate-y-5 translate-x-[10%] md:translate-x-[30%] rounded-[1rem] md:scale-150 "
           />
+          <img src={mobile} className=" absolute w-24 -translate-x-[50%] translate-y-[10%] rounded-lg phoneimg " alt="" />
+
         </div>
       </motion.div>
     </>

@@ -8,6 +8,9 @@
   import portfolio from "../assets/projectimg/portfolio.png"
   import uifrydp from "../assets/projectimg/uifry.png"
   import uifryimg from "../assets/projectimg/uifryimage.png"
+  import uifryphone from "../assets/projectimg/uifryphone.png"
+  import artifexphone from "../assets/projectimg/artifexphone.png"
+  import portfoliophone from "../assets/projectimg/portfoliophone.png"
   import { fire, react, tailwind, vite } from '../images/image.js';
 
 
@@ -18,7 +21,8 @@
       discr: "This project is an innovative e-commerce platform showcases and sells custom sketches and artworks. Customers can view my portfolio, order custom sketches, and enjoy secure payments and reliable delivery.",
       link:"https://artifexpiyush.vercel.app/",
       gitlink:"https://github.com/piyushSharma689/Artifex",
-      tech:[react, fire, tailwind, vite]
+      tech:[react, fire, tailwind, vite],
+      mobile: artifexphone
     },
     Uifry: {
       profile: uifrydp, 
@@ -26,7 +30,8 @@
       discr: "UIFry is a UI/UX project built with React and Tailwind CSS, exploring creative design solutions and interactive components. This project showcases my ability to build visually engaging and user-friendly interfaces using modern web technologies.",
       link:"https://uifrypiyush.vercel.app/",
       gitlink:"https://github.com/piyushSharma689/uiFry",
-      tech:[react, tailwind, vite]
+      tech:[react, tailwind, vite],
+      mobile: uifryphone
     },
     Portfolio: {
       profile: portdp, 
@@ -34,7 +39,8 @@
       discr: "This portfolio website showcases my Web development skills using React, Tailwind, and Firebase, featuring diverse projects and a focus on user-centric design.",
       link:"https://portfoliopiyush.vercel.app/",
       gitlink:"https://github.com/piyushSharma689/Portfolio",
-      tech:[react, tailwind, vite]
+      tech:[react, tailwind, vite],
+      mobile: portfoliophone
     }
   };
 
@@ -53,7 +59,7 @@
           {`<Projects/>`}{" "}
           <div className=" w-60 md:w-[80%] h-[0.1rem] bg-slate-50"></div>
         </motion.h1>
-        <div id="projects" className=" flex flex-col items-center justify-center md:px-20  w-full h-fit "> 
+        <div id="projects" className=" flex flex-col items-center justify-center mt-10 md:px-20  w-full h-fit "> 
 
         {Object.entries(projects).map(([key, value]) => {
             return <Projectcomp 
@@ -65,6 +71,7 @@
             link={value.link}
             gitlink={value.gitlink}
             techs={value.tech}
+            mobile={value.mobile}
             />;
           })}
           
