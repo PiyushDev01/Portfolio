@@ -45,9 +45,9 @@ function Skills() {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.1 }}
-        className="font-ubuntu py-8  text-4xl md:text-5xl text-slate-100 text-center"
+        className=" font-fira py-8  text-4xl md:text-5xl text-slate-100 text-center"
       >
-        Tech Stack
+        Tech Stack 
       </motion.h1>
       <div
         id="skillcont"
