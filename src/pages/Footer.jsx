@@ -10,7 +10,7 @@ function Footer() {
             <h1 className='font-fira text-1xl md:text-3xl py-3 text-transparent bg-gradient-to-r bg-clip-text from-purple-500 via-indigo-500 to-purple-500 font-medium'>GetinTouch();</h1>
             <div id="social" className=" flex py-5 gap-3 md:gap-6 cursor-pointer">
             <a href="https://www.linkedin.com/in/artifexpiyush/" target="_blank"><img  className="brightness-150 w-8" src={linkedin} alt="" /></a>
-            <a href="https://github.com/piyushSharma689" target="_blank"><img  className=" w-8 brightness-150 " src={github1} alt="" /></a>
+            <a href="https://github.com/PiyushDev01" target="_blank"><img  className=" w-8 brightness-150 " src={github1} alt="" /></a>
             <a href="https://leetcode.com/u/piyush6883/" target="_blank"><img  className="brightness-150 w-8" src={leetcode} alt="" /></a>
             <a href="https://www.instagram.com/im_artifex?igsh=dW0yZGN3NHNzNTM3" target="_blank"><img  className="brightness-150 w-8" src={insta} alt="" /></a>
             <a href="mailto:piyushvishwakarma6706@gmail.com" target="_blank"><img  className="brightness-150 w-8" src={mail} alt="" /></a>
