@@ -6,6 +6,7 @@ import c from "../assets/skills/C.png";
 import figma from "../assets/skills/Figma.png";
 import java from "../assets/skills/Java.png";
 import tailwind from "../assets/skills/Tailwind CSS.png";
+import mui from "../assets/skills/materialui.png";
 import vite from "../assets/skills/Vite.js.png";
 import boot from "../assets/skills/Bootstrap.png";
 import fire from "../assets/skills/Firebase.png";
@@ -24,5 +25,5 @@ import whatsapp from "../assets/social/WhatsApp.png"
 import py from "../assets/skills/Python.png"
 
 export {
-  html,css,js,react,c,figma,java,tailwind,vite,boot,fire,git,github,Node, py,image,linkedin,github1,insta,leetcode,mail,whatsapp,ms,ln
+  html,css,js,react,c,figma,java,tailwind,vite,boot,fire,git,github,Node, py,image,linkedin,github1,insta,leetcode,mail,whatsapp,ms,ln,mui
 };
