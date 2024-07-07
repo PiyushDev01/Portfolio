@@ -16,24 +16,4 @@ This is a portfolio repository made with React and Tailwind CSS. The portfolio h
 - HTML
 - CSS
 
-## Installation
-```
-# Clone the repository
-git clone https://github.com/yourusername/portfolio
 
-# Install dependencies
-npm install
-
-# Run the project
-npm start
-```
-
-## Usage
-- Customize the content in the `src/components` directory to add your own projects and skills
-- Update the styling in `src/styles/tailwind.css` to match your personal brand
-- Deploy the portfolio to a hosting service to showcase your work
-
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-Feel free to fork and modify this repository to create your own personalized portfolio website. Happy coding!
