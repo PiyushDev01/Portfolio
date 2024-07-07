@@ -21,7 +21,7 @@
       discr: "This project is an innovative e-commerce platform showcases and sells custom sketches and artworks. Customers can view my portfolio, order custom sketches, and enjoy secure payments and reliable delivery.",
       link:"https://artifexpiyush.vercel.app/",
       gitlink:"https://github.com/PiyushDev01/Artifex",
-      tech:[react, fire, tailwind, vite],
+      tech:[react, fire, tailwind],
       mobile: artifexphone
     },
     Uifry: {
@@ -30,7 +30,7 @@
       discr: "UIFry is a UI/UX project built with React and Tailwind CSS, exploring creative design solutions and interactive components. This project showcases my ability to build visually engaging and user-friendly interfaces using modern web technologies.",
       link:"https://uifrypiyush.vercel.app/",
       gitlink:"https://github.com/PiyushDev01/uiFry",
-      tech:[react, tailwind, vite],
+      tech:[react, tailwind],
       mobile: uifryphone
     },
     Portfolio: {
@@ -39,7 +39,7 @@
       discr: "This portfolio website showcases my Web development skills using React, Tailwind, and Firebase, featuring diverse projects and a focus on user-centric design.",
       link:"https://portfoliopiyush.vercel.app/",
       gitlink:"https://github.com/PiyushDev01/Portfolio",
-      tech:[react, tailwind, vite],
+      tech:[react, tailwind],
       mobile: portfoliophone
     }
   };
