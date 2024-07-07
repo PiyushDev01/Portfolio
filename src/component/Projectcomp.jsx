@@ -58,7 +58,10 @@ function Projectcomp(props) {
             </a>
             <a href={gitlink} target="_blank">
               <img
-                src={git}
+                // src={git}
+                 onClick={()=>{
+                  alert("Facing some issues with my GitHub account, currently resolving them")
+                }}
                 className="w-[3rem] cursor-pointer h-[3rem] hover:opacity-100 opacity-50 transition-all "
                 alt=""
               />
