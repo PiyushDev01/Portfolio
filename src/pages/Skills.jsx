@@ -21,7 +21,7 @@ const skills = {
   Python:[py,2],
   GitHub: [github,2],
   Git: [git,1],
-  MaterialUI: [mui,3]
+  "Material⠀UI" : [mui,3]
 };
 
 function Skills() {
