@@ -37,7 +37,7 @@
       profile: portdp, 
       image: portfolio, 
       discr: "This portfolio website showcases my Web development skills using React, Tailwind, and Firebase, featuring diverse projects and a focus on user-centric design.",
-      link:"https://portfoliopiyush.vercel.app/",
+      link:"https://piyushdev.me/",
       gitlink:"https://github.com/PiyushDev01/Portfolio",
       tech:[react, tailwind],
       mobile: portfoliophone
