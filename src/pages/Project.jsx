@@ -47,7 +47,7 @@
   function Project() {
     return (
       <>
-      <div id="projectcont" className="flex flex-col w-full h-fit px-6 md:py-10 md:px-40 mb-10 ">
+      <div id="Projects" className="flex flex-col w-full h-fit px-6 md:py-10 md:px-40 mb-10 ">
       <motion.h1
           variants={fadeIn("up", 0.3)}
           initial="hidden"

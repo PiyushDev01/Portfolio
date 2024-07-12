@@ -14,7 +14,7 @@ function Home() {
   return (
     <>
       <Nav />
-      <div id="home" className=" overflow-hidden flex flex-col relative bg-[#11111b] w-full pt-[8rem] md:pt-[10rem] h-fit ">
+      <div id="Home" className=" overflow-hidden flex flex-col relative bg-[#11111b] w-full pt-[8rem] md:pt-[10rem] h-fit ">
       <svg id="third" className=" absolute w-[40rem] md:translate-x-[180%] translate-y-[320%] md:translate-y-[320%] "  viewBox="0 0 1433 1433" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_f_97_2)">
 <circle cx="716.5" cy="716.5" r="216.5" fill="#6200EA"/>

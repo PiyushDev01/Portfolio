@@ -27,7 +27,7 @@ const skills = {
 function Skills() {
   return (
     <div
-      id="skill"
+      id="Skills"
       className="flex flex-col w-full h-fit px-6 md:py-10 md:px-40 mb-10 "
     >
       <motion.h1
