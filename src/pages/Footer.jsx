@@ -17,7 +17,7 @@ function Footer() {
             <a href="https://wa.me/+916392802689?text=Hello." target="_blank"><img  className="brightness-150 w-8" src={whatsapp} alt="" /></a>
             </div>
             {/* <h1 className='font-fira text-1xl md:text-3xl py-3 text-slate-300 font-medium' >'Adiós, amigo 👋'</h1> */}
-            <a href="#home"> <h1 className=' text-4xl -rotate-90' >&#10148;</h1></a>
+            <a href="#Home"> <h1 className=' text-4xl -rotate-90' >&#10148;</h1></a>
             <p className="  text-xs md:text-lg font-fira text-slate-300 py-6">Design & Built by Piyush Vishwakarma &#169; 2024 </p>
     </div>
     </>
