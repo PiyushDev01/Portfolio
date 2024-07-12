@@ -3,7 +3,7 @@ import Nav from "../component/Nav";
 import download from "../assets/downloadicon.png";
 import "./home.css";
 import resume from "./Piyush_Vishwakarma.pdf";
-
+import About from "./About";
 import Skills from "./Skills";
 import Project from "./Project";
 import Footer from "./Footer";
@@ -103,8 +103,9 @@ function Home() {
         </div>
 
         {/* skills section started */}
-
+        <About />
         <Skills />
+
        <Project/>
       <Certification/>
        <Footer/>

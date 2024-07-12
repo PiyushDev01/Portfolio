@@ -48,7 +48,7 @@ function Skills() {
         viewport={{ once: false, amount: 0.1 }}
         className=" font-fira py-8  text-4xl md:text-5xl text-slate-100 text-center"
       >
-        Tech Stack. 
+        Tech Stack<span className=" text-indigo-400">.</span> 
       </motion.h1>
       <div
         id="skillcont"

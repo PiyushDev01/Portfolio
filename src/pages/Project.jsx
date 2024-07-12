@@ -11,7 +11,7 @@
   import uifryphone from "../assets/projectimg/uifryphone.png"
   import artifexphone from "../assets/projectimg/artifexphone.png"
   import portfoliophone from "../assets/projectimg/portfoliophone.png"
-  import { fire, react, tailwind, vite } from '../images/image.js';
+  import { fire, react, tailwind } from '../images/image.js';
 
 
   const projects = {
