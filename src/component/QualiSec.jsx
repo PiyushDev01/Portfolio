@@ -15,7 +15,7 @@ function QualiSec(props) {
     <>
 <div
             id="qualifications"
-            className=" relative text-left w-full h-fit mt-4 p-[1rem]"
+            className=" relative text-left w-full h-fit mt-4 pr-0 p-[1rem]"
           >
             <div
             variants={fadeIn("", 0.3)}
