@@ -21,7 +21,7 @@
       discr: "This project is an innovative e-commerce platform showcases and sells custom sketches and artworks. Customers can view my portfolio, order custom sketches, and enjoy secure payments and reliable delivery.",
       link:"https://artifexpiyush.vercel.app/",
       gitlink:"https://github.com/PiyushDev01/Artifex",
-      tech:[react, fire, tailwind],
+      tech:[react, tailwind, fire],
       mobile: artifexphone
     },
     Uifry: {

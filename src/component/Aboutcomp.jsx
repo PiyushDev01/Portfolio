@@ -27,18 +27,11 @@ function Aboutcomp() {
             whileInView={"show"}
             viewport={{ once: false, amount: 0.1 }}
 
-            className=" mt-4 md:text-xl text-sm font-medium  md:font-semibold md:p-[1rem]">
-              Hello! I am an enthusiastic developer who enjoys coding and
-              creating new things. I am currently pursuing a Bachelor of
-              Technology in Computer Science Engineering with a specialization
-              in Artificial Intelligence and Machine Learning. I am always open
-              to learning and exploring new technologies. I am a quick learner
-              and a team player who is ready to take on new challenges. I am
-              proficient in various programming languages and technologies such
-              as Java, JavaScript, Python, React, Node.js, and MongoDB. I am
-              actively seeking opportunities to work on new projects and
-              collaborate with other developers. I am eager to learn and advance
-              as a developer and contribute to the tech industry.
+            className=" mt-4 font-sans md:text-xl text-sm font-medium  md:font-semibold md:p-[1rem]">
+              Hi there! I'm an eager developer that likes to write code and make new stuff. I'm presently working toward a Bachelor of Technology in Computer Science Engineering with a focus.
+
+within machine learning and artificial intelligence. I'm always willing to learn about and experiment with new technologies. I am a cooperative team player that is eager to take on new tasks and a quick learner. I am skilled in many different programming languages and technologies, including Python, Java, JavaScript, React, Node.js, and MongoDB. I'm constantly looking for new projects to work on and possibilities to interact with other devs. I'm excited to grow as a developer, learn new things, and make a contribution to the tech sector.
+
             </motion.p>
           </div>
         </div>

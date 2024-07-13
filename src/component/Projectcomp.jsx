@@ -34,7 +34,7 @@ function Projectcomp(props) {
       
       onClick={() => setIsExpanded(!isExpanded)}
     >
-      <p className="text-sm md:text-sm  font-ubuntu text-slate-400">
+      <p className="text-sm md:text-sm max-w-[18rem]  font-ubuntu text-slate-400">
         {discr}
       </p>
       {!isExpanded && (
@@ -68,7 +68,7 @@ function Projectcomp(props) {
             </a>
           </div>
         </div>
-        <div id="pright" className=" md:w-[50%] h-20 relative  ">
+        <div id="pright" className=" md:w-[50%] h-20 translate-x-10 relative  ">
           <img
             src={image}
             alt=""

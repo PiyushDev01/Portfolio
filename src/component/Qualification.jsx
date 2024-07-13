@@ -18,8 +18,8 @@ const QualificationDetails = { q1: {
     inst: "AKTU",
     clg: "Galgotias College of Engineering and Technology",
     addr: "Noida, Uttar Pradesh",
-    disc1: "Currently pursuing a Bachelor of Technology in Computer Science Engineering with a specialization in Artificial intelligence and Machine Learning.",
-    disc2: "",
+    disc2: "Currently pursuing a Bachelor of Technology in Computer Science Engineering with a specialization in Artificial intelligence and Machine Learning.",
+    
     cur: true,
     },
 

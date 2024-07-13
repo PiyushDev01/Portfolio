@@ -28,7 +28,7 @@ function CertifCard(props) {
                 }
                 
             </div>
-            <div id='icon' className=' w-fit h-fit p-2 bg-[#1c1d2a] rounded-xl border-[2px] border-slate-600  ' ><img src={img} className=' w-8 opacity-50' alt="" /></div>
+            <div id='icon' className=' w-fit h-fit  ' ><img src={img} className=' w-8 opacity-50' alt="" /></div>
             </div>
             <h1  className="font-ubuntu text-xl md:text-2xl text-slate-100 " >{title}</h1>
             <p className='text-sm md:text-sm font-ubuntu text-slate-400 ' >{disc}</p>
