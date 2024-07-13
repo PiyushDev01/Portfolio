@@ -20,7 +20,7 @@
       image: artifex, 
       discr: "This project is an innovative e-commerce platform showcases and sells custom sketches and artworks. Customers can view my portfolio, order custom sketches, and enjoy secure payments and reliable delivery.",
       link:"https://artifexpiyush.vercel.app/",
-      gitlink:"https://github.com/PiyushDev01/Artifex",
+      gitlink:"https://github.com/PiyushDev01/Artifex-v2",
       tech:[react, tailwind, fire],
       mobile: artifexphone
     },
@@ -29,7 +29,7 @@
       image: uifryimg, 
       discr: "UIFry is a UI/UX project built with React and Tailwind CSS, exploring creative design solutions and interactive components. This project showcases my ability to build visually engaging and user-friendly interfaces using modern web technologies.",
       link:"https://uifrypiyush.vercel.app/",
-      gitlink:"https://github.com/PiyushDev01/uiFry",
+      gitlink:"https://github.com/PiyushDev01/uiFry-v1",
       tech:[react, tailwind],
       mobile: uifryphone
     },
