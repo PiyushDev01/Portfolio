@@ -22,7 +22,7 @@ function Aboutcomp() {
             className=" text-left w-full h-fit flex flex-col text-slate-400"
           >
             <motion.p 
-            variants={fadeIn("left", 0.1)}In this world, is the destiny of mankind controlled by some transcendental entity or law? Is it like the hand of God hovering above? At least it is true that man has no control; even over his own will.
+            variants={fadeIn("left", 0.1)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.1 }}
