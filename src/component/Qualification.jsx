@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import fadeIn from "../framer/fadein.js";
 
 const QualificationDetails = { q1: {
-    from: "2019",
+    from: "2020",
     to: "2021",
     inst: "CBSE",
     clg: "Daffodils Public School",
