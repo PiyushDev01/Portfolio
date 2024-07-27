@@ -23,7 +23,8 @@ import ms from "../assets/certificate/microsoft.png"
 import ln from "../assets/certificate/linkedin.png"
 import whatsapp from "../assets/social/WhatsApp.png"
 import py from "../assets/skills/Python.png"
+import acc from "../assets/certificate/acc.png"
 
 export {
-  html,css,js,react,c,figma,java,tailwind,vite,boot,fire,git,github,Node, py,image,linkedin,github1,insta,leetcode,mail,whatsapp,ms,ln,mui
+  html,css,js,react,c,figma,java,tailwind,vite,boot,fire,git,github,Node, py,image,linkedin,acc,github1,insta,leetcode,mail,whatsapp,ms,ln,mui
 };

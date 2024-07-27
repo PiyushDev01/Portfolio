@@ -2,20 +2,27 @@ import React from 'react'
 import { motion } from "framer-motion";
 import fadeIn from "../framer/fadein.js";
 import CertifCard from '../component/CertifCard.jsx';
-import { ln, ms } from '../images/image.js';
+import { acc, ln, ms } from '../images/image.js';
 
 const certificatesDetail = {
     microlinkedin:{
-        title:"Software Development",
+        title:"Microsoft and LinkedIn",
         disc:"Career Essential in Software Development by Microsoft and LinkedIn",
         link:"https://www.linkedin.com/learning/certificates/c44b6b2c519dcc03c04aedb306de9e82530d7a3ad56f235a6a316aec210835f9",
         icons:[ms,ln]
     },
     microazure:{
-        title:"GitHub",
+        title:"Microsoft",
         disc:"Manage the lifecycle of your projects on GitHub",
         link:"https://learn.microsoft.com/api/achievements/share/en-us/PiyushVishwakarma-7228/3WAGY5DH?sharingId=2105964CD0766624",
         icons:[ms]
+    }
+    ,
+    accenture:{
+        title:"Accenture",
+        disc:"Digital Skills: Artificial Intelligence ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
+        link:"https://www.futurelearn.com/certificates/jmsiib5",
+        icons:[acc]
     }
 }
 
