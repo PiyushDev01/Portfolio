@@ -7,7 +7,7 @@ import About from "./About";
 import Skills from "./Skills";
 import Project from "./Project";
 import Footer from "./Footer";
-import { image,linkedin,github1,insta,leetcode,mail,whatsapp } from "../images/image";
+import { image,linkedin,github1,insta,leetcode,mail,whatsapp, mkty } from "../images/image";
 import Certification from "./Certification";
 
 function Home() {
@@ -81,10 +81,11 @@ function Home() {
                 </span>
               </button>
             </a>
-            <div id="social" className=" flex py-10 gap-6  w-fit">
+            <div id="social" className=" items-center flex py-10 gap-6  w-fit">
             <a href="https://www.linkedin.com/in/artifexpiyush/" target="_blank"><img  className=" w-8" src={linkedin} alt="" /></a>
             <a href="https://github.com/PiyushDev01" target="_blank"><img  className=" w-8" src={github1} alt="" /></a>
-            <a href="https://leetcode.com/u/piyush6883/" target="_blank"><img  className=" w-8" src={leetcode} alt="" /></a>
+            <a href="https://leetcode.com/u/piyush6883/" target="_blank"><img   className=" w-8" src={leetcode} alt="" /></a>
+            <a href="https://monkeytype.com/profile/piyush786321" target="_blank"><img id="mk" className=" w-10 saturate-0" src={mkty} alt="" /></a>
             <a href="https://www.instagram.com/im_artifex?igsh=dW0yZGN3NHNzNTM3" target="_blank"><img  className=" w-8" src={insta} alt="" /></a>
             <a href="mailto:piyushvishwakarma6706@gmail.com" target="_blank"><img  className=" w-8" src={mail} alt="" /></a>
             <a href="https://wa.me/+916392802689?text=Hello." target="_blank"><img  className=" w-8" src={whatsapp} alt="" /></a>
