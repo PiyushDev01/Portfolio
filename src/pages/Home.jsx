@@ -66,9 +66,7 @@ function Home() {
               I design & code for web.
             </h1>
             <p className=" md:w-2/3 text-sm md:text-lg text-slate-300 py-6">
-              Web Developer with experience of Digital Concept Arts, Frontend
-              Web Designs. <br /> I Love fun Web UI, collaboration and making
-              products.
+             I'm a web developer with experience in digital concept arts and front-end web design. <br/> I enjoy creating engaging web UI and collaborating to develop innovative products.
               <br />
               {/* <br />I value simple content structure, clean design patterns, and
               thoughtful interactions. */}
