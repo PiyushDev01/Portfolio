@@ -24,9 +24,10 @@ import ln from "../assets/certificate/linkedin.png"
 import whatsapp from "../assets/social/WhatsApp.png"
 import apw from "../assets/skills/Appwrite.png"
 import py from "../assets/skills/Python.png"
+import ibm from "../assets/certificate/ibm.png"
 import acc from "../assets/certificate/acc.png"
 import mkty from "../assets/social/Monkeytype.png"
 
 export {
-  html,css,js,react,c,figma,java,tailwind,vite, apw ,boot,fire,git,github,Node, py,image,linkedin,acc,github1,insta,leetcode,mail,whatsapp,ms,ln,mui,mkty
+  html,css,js,react,c,figma,java,tailwind,vite, apw ,boot,fire,git,ibm ,github,Node, py,image,linkedin,acc,github1,insta,leetcode,mail,whatsapp,ms,ln,mui,mkty
 };

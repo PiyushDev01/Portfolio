@@ -15,7 +15,7 @@ function CertifCard(props) {
     initial="hidden"
     whileInView={"show"}
     viewport={{ once: false, amount: 0.1 }}
-    id="certcontainer" className= ' transition-all flex flex-col  md:w-[20rem] md:min-h-[10rem] h-fit bg-gradient-to-b border-[1px] border-slate-800 from-[#151423] to-[#221838] overflow-hidden rounded-3xl p-6 mx-4 my-4 justify-between '>
+    id="certcontainer" className= ' transition-all flex flex-col  md:w-[20rem] md:min-h-[18rem] h-fit bg-gradient-to-b border-[1px] border-slate-800 from-[#151423] to-[#221838] overflow-hidden rounded-2xl p-6 mx-4 my-4 justify-between '>
             <div id="allicons" className=' flex items-center justify-between mb-4'>
             
             <div id="icons" className=' flex  gap-2 py-2'  >

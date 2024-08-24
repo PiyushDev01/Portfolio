@@ -79,7 +79,7 @@ function Home() {
                 </span>
               </button>
             </a>
-            <div id="social" className=" items-center flex py-10 gap-6  w-fit">
+            <div id="social" className=" items-center flex justify-between w-full py-10 md:gap-6  md:w-fit">
             <a href="https://www.linkedin.com/in/artifexpiyush/" target="_blank"><img  className=" w-8" src={linkedin} alt="" /></a>
             <a href="https://github.com/PiyushDev01" target="_blank"><img  className=" w-8" src={github1} alt="" /></a>
             <a href="https://leetcode.com/u/piyush6883/" target="_blank"><img   className=" w-8" src={leetcode} alt="" /></a>

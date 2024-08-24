@@ -2,7 +2,9 @@ import React from 'react'
 import { motion } from "framer-motion";
 import fadeIn from "../framer/fadein.js";
 import CertifCard from '../component/CertifCard.jsx';
-import { acc, ln, ms } from '../images/image.js';
+import { acc, ibm, ln, ms } from '../images/image.js';
+import ibmcerti from "./Ibmcertificate.pdf";
+import resume from "./Piyush_Vishwakarma.pdf";
 
 const certificatesDetail = {
     microlinkedin:{
@@ -12,10 +14,10 @@ const certificatesDetail = {
         icons:[ms,ln]
     },
     microazure:{
-        title:"Microsoft",
-        disc:"Manage the lifecycle of your projects on GitHub",
-        link:"https://learn.microsoft.com/api/achievements/share/en-us/PiyushVishwakarma-7228/3WAGY5DH?sharingId=2105964CD0766624",
-        icons:[ms]
+        title:"IBM",
+        disc:"IBM SkillsBuild Summer Internship Program",
+        link: ibmcerti,
+        icons:[ibm]
     }
     ,
     accenture:{
