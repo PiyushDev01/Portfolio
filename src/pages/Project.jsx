@@ -4,7 +4,7 @@
   import Projectcomp from '../component/Projectcomp.jsx';
   import artifex from "../assets/projectimg/artifex.png"
   import artdp from "../assets/projectimg/titlelogo2.webp"
-  import portdp from "../assets/profile.png"
+  import portdp from "../assets/profile.jpg"
   import portfolio from "../assets/projectimg/portfolio.png"
   import uifrydp from "../assets/projectimg/uifry.png"
   import uifryimg from "../assets/projectimg/uifryimage.png"

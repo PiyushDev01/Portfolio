@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./nav.css";
-import profile from "../assets/profile.png"
+import profile from "../assets/profile1.png"
 import menu from "../assets/menu.png"
 
 function Nav() {
