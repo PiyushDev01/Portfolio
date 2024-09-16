@@ -10,7 +10,7 @@ const QualificationDetails = { q1: {
     clg: "Daffodils Public School",
     addr: "Mirzapur, Uttar Pradesh",
     disc1: "Completed my 12th grade with 91% in the Science Stream.",
-    disc2: "Successfully completed intermediate studies at Daffodils Public School, focusing on developing tech-related skills problem-solving abilities, preparing for higher education.",
+    disc2: "",
     },
     q2: {
     from: "2022",

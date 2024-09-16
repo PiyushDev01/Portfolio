@@ -19,7 +19,7 @@
       profile: artdp, 
       image: artifex, 
       discr: "This project is an innovative e-commerce platform showcases and sells custom sketches and artworks. Customers can view my portfolio, order custom sketches, and enjoy secure payments and reliable delivery.",
-      link:"https://artifexpiyush.vercel.app/",
+      link:"https://artifex2.vercel.app/",
       gitlink:"https://github.com/PiyushDev01/Artifex-v2",
       tech:[react, tailwind, fire],
       mobile: artifexphone
