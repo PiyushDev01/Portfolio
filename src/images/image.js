@@ -13,7 +13,7 @@ import fire from "../assets/skills/Firebase.png";
 import git from "../assets/skills/git.png";
 import github from "../assets/skills/GitHub.png";
 import Node from "../assets/skills/Node.js.png";
-import image from "../assets/profile.jpg";
+import image from "../assets/profile1.png";
 import linkedin from "../assets/social/LinkedIn.png"
 import github1 from "../assets/social/GitHub.png"
 import insta from "../assets/social/insta.png"
