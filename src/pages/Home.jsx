@@ -71,7 +71,10 @@ function Home() {
               {/* <br />I value simple content structure, clean design patterns, and
               thoughtful interactions. */}
             </p>
-            <a href={resume} target="_blank" >
+            <a href={} target="_blank" onclick={()=>{
+          alert("Updating resume...");
+            }}>
+              // <a href={resume} target="_blank" >
               <button class="button">
                 <span class="button-content">
                   {" "}
