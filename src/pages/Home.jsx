@@ -71,17 +71,17 @@ function Home() {
               {/* <br />I value simple content structure, clean design patterns, and
               thoughtful interactions. */}
             </p>
-            <a href="" target="_blank" onclick={()=>{
-          alert("Updating resume...");
-            }}>
-              {/* // <a href={resume} target="_blank" > */}
-              <button class="button">
+           
+              {/* <a href={resume} target="_blank" > */}
+              <button class="button" onClick={()=>{
+                alert("Udating Resume...Please check back later")
+              }}  >
                 <span class="button-content">
                   {" "}
                   <img src={download} className=" w-4 h-4" alt="" /> Resume{" "}
                 </span>
               </button>
-            </a>
+            {/* </a> */}
             <div id="social" className=" items-center flex justify-between w-full py-10 md:gap-6  md:w-fit">
             <a href="https://www.linkedin.com/in/artifexpiyush/" target="_blank"><img  className=" w-8" src={linkedin} alt="" /></a>
             <a href="https://github.com/PiyushDev01" target="_blank"><img  className=" w-8" src={github1} alt="" /></a>
