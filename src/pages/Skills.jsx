@@ -16,11 +16,11 @@ const skills = {
   Bootstrap: [boot,1],
   C: [c,1],
   Java: [java,1],
-  Firebase: [fire,2],
-  Appwrite:[apw,3],
+  Firebase: [fire,1],
+  Appwrite:[apw,2],
   Nodejs: [Node,3],
   Python:[py,2],
-  GitHub: [github,2],
+  GitHub: [github,1],
   Git: [git,1],
   "Material⠀UI" : [mui,3]
 };
