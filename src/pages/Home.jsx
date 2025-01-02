@@ -65,8 +65,8 @@ function Home() {
             <h1 className=" font-ubuntu text-4xl md:text-7xl text-slate-100 ">
               I design & code for web.
             </h1>
-            <p className=" md:w-2/3 text-sm md:text-lg text-slate-300 py-6">
-             I'm a web developer with experience in digital concept arts and front-end web design. <br/> I enjoy creating engaging web UI and collaborating to develop innovative products.
+            <p className=" md:w-2/3 text-sm md:text-lg text-slate-400 py-6">
+              I enjoy creating engaging web UI and collaborating to develop innovative products.
               <br />
               {/* <br />I value simple content structure, clean design patterns, and
               thoughtful interactions. */}
@@ -82,11 +82,11 @@ function Home() {
                 </span>
               </button>
             {/* </a> */}
-            <div id="social" className=" items-center flex justify-between w-full py-10 md:gap-6  md:w-fit">
+            <div id="social" className=" items-center saturate-0 flex justify-between w-full py-10 md:gap-8  md:w-fit">
             <a href="https://www.linkedin.com/in/artifexpiyush/" target="_blank"><img  className=" w-8" src={linkedin} alt="" /></a>
             <a href="https://github.com/PiyushDev01" target="_blank"><img  className=" w-8" src={github1} alt="" /></a>
             <a href="https://leetcode.com/u/piyush6883/" target="_blank"><img   className=" w-8" src={leetcode} alt="" /></a>
-            <a href="https://monkeytype.com/profile/piyush786321" target="_blank"><img id="mk" className=" w-10 saturate-0" src={mkty} alt="" /></a>
+            <a href="https://monkeytype.com/profile/piyush786321" target="_blank"><img id="mk" className=" w-10 md:block hidden saturate-0" src={mkty} alt="" /></a>
             <a href="https://www.instagram.com/im_artifex?igsh=dW0yZGN3NHNzNTM3" target="_blank"><img  className=" w-8" src={insta} alt="" /></a>
             <a href="mailto:piyushvishwakarma6706@gmail.com" target="_blank"><img  className=" w-8" src={mail} alt="" /></a>
             <a href="https://wa.me/+916392802689?text=Hello." target="_blank"><img  className=" w-8" src={whatsapp} alt="" /></a>
@@ -94,7 +94,7 @@ function Home() {
           </div>
 
           <div id="sideImage" className="py-16 px-4 w-full h-full md:w-2/6  ">
-            <div className=" backimage flex justify-center rotate-6 rounded-2xl bg-slate-700">
+            <div className=" backimage flex justify-center rotate-6 rounded-2xl bg-slate-800">
               <img
                 src={image}
                 className=" shadow-2xl -rotate-6  rounded-3xl"

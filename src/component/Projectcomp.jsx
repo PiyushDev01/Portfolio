@@ -18,13 +18,16 @@ function Projectcomp(props) {
         whileInView={"show"}
         viewport={{ once: false, amount: 0.1 }}
         id="maincont"
-        className=" my-8 flex flex-col md:flex-row w-[90%] md:w-[80%] h-fit bg-[#181827] overflow-hidden rounded-[2rem] md:rounded-[3rem] border border-slate-600 "
+        className=" relative my-8 flex flex-col md:flex-row w-[90%] md:w-[80%] h-fit bg-[#181827] overflow-hidden rounded-[2rem] md:rounded-[3rem]  border-slate-600 "
       >
+               <div className=' absolute w-[50%] h-[50%] blur-3xl -top-[50%]  left-[50%] -translate-x-[50%] bg-slate-500/50  ' ></div>
+
+
         <div
           id="pleft"
           className="md:w-[50%] w-full h-full py-8 md:py-16 px-5 md:px-10 flex flex-col  "
         >
-          <img src={dp} className=" w-[3rem] rounded-full " alt="" />
+          <img src={dp} className=" w-[3rem] shadow-md shadow-slate-950 rounded-full " alt="" />
           <h1 className="font-ubuntu text-2xl md:text-4xl text-slate-100 py-4">
             {title}
           </h1>
@@ -42,10 +45,10 @@ function Projectcomp(props) {
       )}
     </div>
 
-          <div id="techstack" className=" flex gap-3">
+          <div id="techstack" className=" bg-slate-800  rounded-full mt-2 w-fit p-1 flex gap-2">
             {techs ? (
               techs.map((item, index) => (
-                <img src={item} key={index} className="w-5  my-4  " />
+                <img src={item} key={index} className="w-5   " />
               ))
             ) : (
               <div>No tech stack available</div>
