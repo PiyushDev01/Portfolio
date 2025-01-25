@@ -12,7 +12,7 @@ function Nav() {
 //   bg-[#11111b]
   return (
     <>
-      <div className="flex flex-col fixed items-center justify-center w-full md:h-[10rem] mt-10 md:mt-0  z-10">
+      <div className="flex flex-col fixed items-center justify-center w-full md:h-[10rem] mt-10 md:mt-0  z-20">
         <div
           id="nav"
           className=  " bg-white/10 backdrop-blur-sm h-2/4 rounded-full w-4/5 flex flex-row items-center px-[1rem] justify-between"
