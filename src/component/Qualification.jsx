@@ -44,7 +44,7 @@ function Qualification() {
       variants={fadeIn("", 0.3)}
       initial="hidden"
       whileInView={"show"}
-      viewport={{ once: false, amount: 0.1 }}
+      viewport={{ once: true, amount: 0.1 }}
       className=" md:text-5xl font-ubuntu text-3xl text-white font-semibold text-left">Qualifications<span className=" text-indigo-400">.</span></motion.h1>
       </div>
         <div

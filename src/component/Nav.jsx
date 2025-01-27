@@ -45,7 +45,7 @@ function Nav() {
             className="w-[2.5rem] md:hidden h-[2.5rem] rounded-full"
           ></img> */}
 
-          <div id="menuToggle" className=" scale-75"  >
+          <div id="menuToggle" className=" md:hidden scale-75"  >
             <input id="checkbox" type="checkbox" onClick={handletoggle} />
             <label className="toggle" for="checkbox">
               <div className="bar bar--top"></div>

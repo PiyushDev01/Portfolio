@@ -1,4 +1,4 @@
-import React from "react";
+
 import Nav from "../component/Nav";
 import download from "../assets/downloadicon.png";
 import "./home.css";
@@ -10,10 +10,16 @@ import Footer from "./Footer";
 import { image,linkedin,github1,insta,leetcode,mail,whatsapp, mkty } from "../images/image";
 import Certification from "./Certification";
 
+
 function Home() {
+
+  
   return (
     <>
+      
+
       <Nav />
+      
       <div id="Home" className=" overflow-hidden flex flex-col relative bg-[#11111b] w-full pt-[8rem] md:pt-[10rem] h-fit ">
       <svg id="third" className=" absolute w-[40rem] md:translate-x-[180%] translate-y-[320%] md:translate-y-[320%] "  viewBox="0 0 1433 1433" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_f_97_2)">
