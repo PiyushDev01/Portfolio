@@ -18,7 +18,7 @@ return () => clearInterval(interval)
 }, [])
 return (
  
-<div className="text-4xl text-center text-slate-50 font-custom sm:text-4xl font-normal tracking-normal md:text-6xl md:leading-[4rem] w-fit flex items-center jusitfy-center gap-2">
+<div className="text-4xl text-center text-slate-50 font-custom sm:text-4xl font-normal tracking-tighter md:text-6xl md:leading-[4rem] w-fit flex items-center jusitfy-center gap-2">
   {text}{' '}
   <AnimatePresence mode="wait">
     <motion.p
