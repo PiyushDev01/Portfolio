@@ -1,6 +1,7 @@
 
 import { motion } from "framer-motion";
 import fadeIn from "../framer/fadein.js";
+import { LettersPullUp } from './../framer/LettersPullUp';
 
 function Aboutcomp() {
 
@@ -8,9 +9,9 @@ function Aboutcomp() {
 
   return (
     <>
-      <div id="abcontainer" className="md:w-[50%]  h-fit p-[2rem] ">
+      <div id="abcontainer" className="md:w-[50%]  h-fit p-[1rem] ">
         <div id="aboutsection" className=" w-full h-fit ">
-          <motion.h1 
+          {/* <motion.h1 
           variants={fadeIn("", 0.3)}
           initial="hidden"
           whileInView={"show"}
@@ -18,11 +19,12 @@ function Aboutcomp() {
           
           className=" md:text-5xl text-3xl text-white font-semibold font-ubuntu text-center md:text-left">
             About me<span className=" text-indigo-400">.</span>
-          </motion.h1>
+          </motion.h1> */}
+          <LettersPullUp text="About me" />
 
           <div
             id="aboutcontent"
-            className="mt-4 text-left w-full h-fit flex flex-wrap gap-2 text-slate-400"
+            className="mt-4 text-justify w-full h-fit flex flex-wrap gap-2 text-slate-400"
           >
            {text.map((el, i) => (
         <motion.p
@@ -36,7 +38,7 @@ function Aboutcomp() {
             delay: i / 50,
           }}
           key={i}
-          className="  font-sans md:text-xl text-sm font-medium  md:font-semibold "
+          className="  font-ubantu md:text-xl text-base font-normal tracking-tighter  md:font-normal "
         >
           {el}{" "}
         </motion.p>

@@ -4,6 +4,7 @@ import Techstack from "../component/Techstack";
 import { motion } from "framer-motion";
 import fadeIn from "../framer/fadein.js";
 import {html,css,js,react,c,figma,java,tailwind,vite,boot, fire,git,github,Node,py, mui,apw} from "../images/image.js";
+import { LettersPullUp } from './../framer/LettersPullUp';
 
 const skills = {
   HTML: [html,1],
@@ -42,7 +43,7 @@ function Skills() {
         {`<Skills/>`}{" "}
         <div className=" w-60 md:w-[80%] h-[0.1rem] bg-slate-50"></div>
       </motion.h1>
-      <motion.h1
+      {/* <motion.h1
         variants={fadeIn("up", 0.3)}
         initial="hidden"
         whileInView={"show"}
@@ -50,7 +51,11 @@ function Skills() {
         className=" font-fira py-8  text-4xl md:text-5xl text-slate-100 text-center"
       >
         Tech Stack<span className=" text-indigo-400">.</span> 
-      </motion.h1>
+      </motion.h1> */}
+      <div className="flex justify-center">
+
+      <LettersPullUp text="Tech Stack" />
+      </div>
       <div
         id="skillcont"
         className=" flex flex-wrap items-center justify-center md:px-20  w-full h-fit "

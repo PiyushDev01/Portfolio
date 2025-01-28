@@ -1,26 +1,32 @@
 
 import Nav from "../component/Nav";
 import download from "../assets/downloadicon.png";
+import { motion } from "framer-motion";
 import "./home.css";
+import { useState } from "react";
 import resume from "./Piyush_Vishwakarma.pdf";
 import About from "./About";
 import Skills from "./Skills";
-import Project from "./Project";
+import Project from "../framer/Project";
 import Footer from "./Footer";
 import { image,linkedin,github1,insta,leetcode,mail,whatsapp, mkty } from "../images/image";
 import Certification from "./Certification";
+import { GradualSpacing } from '../framer/GradualSpacing';
+import { RotateWords } from '../framer/RotateWords';
+import Available from "../component/Available";
 
 
 function Home() {
 
+  const [imghover, setimghover] = useState(false);
+
   
   return (
     <>
-      
 
       <Nav />
       
-      <div id="Home" className=" overflow-hidden flex flex-col relative bg-[#11111b] w-full pt-[8rem] md:pt-[10rem] h-fit ">
+      <div id="Home" className=" overflow-hidden flex flex-col relative bg-[#11111b] w-full pt-[4rem] md:pt-[10rem] h-fit ">
       <svg id="third" className=" absolute w-[40rem] md:translate-x-[180%] translate-y-[320%] md:translate-y-[320%] "  viewBox="0 0 1433 1433" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_f_97_2)">
 <circle cx="716.5" cy="716.5" r="216.5" fill="#6200EA"/>
@@ -58,20 +64,28 @@ function Home() {
 </defs>
 </svg>
 
+<div className=" w-full flex md:hidden justify-center mb-5 " >
+<Available />
+</div>
+
         <div
           id="hero"
           className="flex flex-col md:flex-row w-full h-fit px-10 md:py-10 md:px-40"
         >
+          
           <div id="hero" className=" md:w-4/6 ">
-            <h1 className=" font-fira text-1xl md:text-4xl py-3 text-slate-100 font-semibold">{`Namaste(); I'm`}</h1>
-            <h1 className="font-ubuntu text-4xl md:text-7xl font-semibold bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500 inline-block py-3 bg-clip-text text-transparent">
+            <h1 className=" font-custom text-1xl md:text-4xl py-3 tracking-wide text-slate-100 font-normal">Hey! It's me</h1>
+            {/* <h1 className="font-ubuntu text-4xl md:text-7xl font-semibold bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500 inline-block py-3 bg-clip-text text-transparent">
               Piyush Vishwakarma.
-            </h1>
+            </h1> */}
+            <GradualSpacing text="Piyush " />
+            <GradualSpacing text="Vishwakarma" />
             <br />
-            <h1 className=" font-ubuntu text-4xl md:text-7xl text-slate-100 ">
+            {/* <h1 className=" font-custom text-4xl md:text-7xl text-slate-100 ">
               I design & code for web.
-            </h1>
-            <p className=" md:w-2/3 text-sm md:text-lg text-slate-400 py-6">
+            </h1> */}
+            <RotateWords />
+            <p className=" md:w-2/3 font-custom trac text-sm md:text-lg text-slate-400 py-6">
               I enjoy creating engaging web UI and collaborating to develop innovative products.
               <br />
               {/* <br />I value simple content structure, clean design patterns, and
@@ -100,21 +114,27 @@ function Home() {
           </div>
 
           <div id="sideImage" className="py-16 px-4 w-full h-full md:w-2/6  ">
-            <div className=" backimage flex justify-center rotate-6 rounded-2xl bg-slate-800">
-              <img
+            <motion.div 
+            animate={{ rotate: imghover ? 0 : 0 }}
+
+            className=" backimage flex justify-center rotate-6 rounded-2xl bg-slate-800">
+              <motion.img
+              animate={{ rotate: imghover ? 0 : 10 }}
                 src={image}
-                className=" shadow-2xl -rotate-6  rounded-3xl"
+                className="  shadow-2xl -rotate-6  rounded-3xl"
+                onMouseOver={() => setimghover(true)}
+                onMouseOut={() => setimghover(false)}
                 alt=""
               />
-            </div>
+            </motion.div>
           </div>
         </div>
 
         {/* skills section started */}
-        <About />
         <Skills />
 
        <Project/>
+        <About />
       <Certification/>
        <Footer/>
       </div>

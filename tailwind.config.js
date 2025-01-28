@@ -9,6 +9,7 @@ export default {
       fontFamily: {
         'fira': ['Fira Code', 'monospace'],
         'ubuntu': ['Ubuntu', 'sans-serif'],
+        custom: ['ClashDisplay', 'sans-serif'],
       },
       colors: {
         mybg: '#181827',

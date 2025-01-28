@@ -1,6 +1,6 @@
   import React from 'react'
   import { motion } from "framer-motion";
-  import fadeIn from "../framer/fadein.js";
+  import fadeIn from "./fadein.js";
   import Projectcomp from '../component/Projectcomp.jsx';
   import artifex from "../assets/projectimg/artifex.png"
   import artdp from "../assets/projectimg/titlelogo2.webp"
@@ -11,7 +11,7 @@
   import uifryphone from "../assets/projectimg/uifryphone.png"
   import artifexphone from "../assets/projectimg/artifexphone.png"
   import portfoliophone from "../assets/projectimg/portfoliophone.png"
-  import { fire, react, tailwind } from '../images/image.js';
+  import { fire, fm, react, tailwind } from '../images/image.js';
 
 
   const projects = {
@@ -39,7 +39,7 @@
       discr: "This portfolio website showcases my Web development skills using React, Tailwind, and Firebase, featuring diverse projects and a focus on user-centric design.",
       link:"https://piyushdev.me/",
       gitlink:"https://github.com/PiyushDev01/Portfolio",
-      tech:[react, tailwind],
+      tech:[react, fm, tailwind,],
       mobile: portfoliophone
     }
   };

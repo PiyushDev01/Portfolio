@@ -3,6 +3,7 @@ import QualiSec from "./QualiSec";
 import { motion } from "framer-motion";
 import fadeIn from "../framer/fadein.js";
 import { FaUserGraduate } from "react-icons/fa6";
+import { LettersPullUp } from './../framer/LettersPullUp';
 
 const QualificationDetails = { q1: {
     from: "2020",
@@ -40,12 +41,13 @@ function Qualification() {
         <FaUserGraduate className=" text-white scale-125 " />
 
         </div>
-      <motion.h1 
+      {/* <motion.h1 
       variants={fadeIn("", 0.3)}
       initial="hidden"
       whileInView={"show"}
       viewport={{ once: true, amount: 0.1 }}
-      className=" md:text-5xl font-ubuntu text-3xl text-white font-semibold text-left">Qualifications<span className=" text-indigo-400">.</span></motion.h1>
+      className=" md:text-5xl font-ubuntu text-3xl text-white font-semibold text-left">Qualifications<span className=" text-indigo-400">.</span></motion.h1> */}
+      <LettersPullUp text="Qualification" />
       </div>
         <div
           id="innercont"

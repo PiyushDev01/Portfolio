@@ -9,6 +9,16 @@ html{
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('./assets/fonts/ClashDisplay-Variable.ttf') format('truetype');
+   /* Adjust weight if needed */
+  font-style: normal;  /* Adjust style if needed */
+}
+
+
+
+
 /* Track */
 ::-webkit-scrollbar {
     width: 8px;

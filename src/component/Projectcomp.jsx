@@ -32,7 +32,7 @@ function Projectcomp(props) {
             {title}
           </h1>
           <div
-      className={`relative overflow-hidden ${isExpanded ?'h-auto max-h-40' : 'h-10 max-h-10'} transition-height duration-300 ease-in  `}
+      className={`relative overflow-hidden cursor-pointer ${isExpanded ?'h-auto max-h-40' : 'h-10 max-h-10'} transition-height duration-300 ease-in  `}
       // className={`relative overflow-hidden ${isExpanded ? 'h-auto max-h-40' : 'h-10 max-h-10'} transition-height duration-500 ease-in-out `}
       
       onClick={() => setIsExpanded(!isExpanded)}
@@ -41,14 +41,14 @@ function Projectcomp(props) {
         {discr}
       </p>
       {!isExpanded && (
-        <div className="absolute inset-x-0 bottom-0 h-8 bg-gradient-to-b from-transparent to-[#181827] pointer-events-none"></div>
+        <div className="absolute  inset-x-0 bottom-0 h-8 bg-gradient-to-b from-transparent to-[#181827] pointer-events-none"></div>
       )}
     </div>
 
           <div id="techstack" className=" bg-slate-800  rounded-full mt-2 w-fit p-1 flex gap-2">
             {techs ? (
               techs.map((item, index) => (
-                <img src={item} key={index} className="w-5   " />
+                <img src={item} key={index} className="w-5  " />
               ))
             ) : (
               <div>No tech stack available</div>
