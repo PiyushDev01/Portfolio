@@ -113,7 +113,7 @@ function Home() {
             </div>
           </div>
 
-          <div id="sideImage" className="py-16 px-4 w-full h-full md:w-2/6  ">
+          <div id="sideImage" className="py-16 z-10 px-4 w-full h-full md:w-2/6  ">
             <motion.div 
             animate={{ rotate: imghover ? 0 : 0 }}
 
@@ -122,8 +122,8 @@ function Home() {
               animate={{ rotate: imghover ? 0 : 10 }}
                 src={image}
                 className="  shadow-2xl -rotate-6  rounded-3xl"
-                onMouseOver={() => setimghover(true)}
-                onMouseOut={() => setimghover(false)}
+                onMouseEnter={() => setimghover(true)}
+                onMouseLeave={() => setimghover(false)}
                 alt=""
               />
             </motion.div>
