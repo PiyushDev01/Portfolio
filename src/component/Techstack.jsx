@@ -16,9 +16,13 @@ function Techstack(props) {
      initial="hidden"
      whileInView={"show"}
      viewport={{ once: false, amount: 0.1 }}
-
+      onClick={
+        () => {
+          window.open(props.link, '_blank')
+        }
+      }
       id="container"
-      className='md:w-40 w-32 h-32 md:h-fit pt-4 py-3 px-6 bg-gradient-to-br from-[#212134] to-[#12121c] transform rotate-45 flex flex-col items-center backdrop-blur-sm border-slate-700 border-[0px] md:m-6 m-4 mx-2 rounded-3xl relative'
+      className='md:w-40 w-32 h-32 md:h-fit cursor-pointer pt-4 py-3 px-6 bg-gradient-to-br from-[#212134] to-[#12121c] transform rotate-45 flex flex-col items-center backdrop-blur-sm border-slate-700 border-[0px] md:m-6 m-4 mx-2 rounded-3xl relative'
       onMouseOver={handleMouseOver}
       onMouseOut={handleMouseOut}
     >
