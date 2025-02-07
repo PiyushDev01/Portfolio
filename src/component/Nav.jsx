@@ -22,7 +22,7 @@ function Nav() {
             id="profileimage"
             className="bg-slate-500 w-12 my-2 md:my-0 md:w-[3.5rem] md:h-[3.5rem] rounded-full"
           ></img> */}
-          <ul className="hidden md:flex flex-row gap-16 px-4 font-fira text-slate-100 font-medium">
+          <ul className="hidden md:flex flex-row gap-16 px-4 text-slate-100 font-light font-fira ">
             <a href="#Home">
               <li className=" transition-all cursor-pointer">{"<Home/>"}</li>
             </a>
