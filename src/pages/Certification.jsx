@@ -9,7 +9,7 @@ import resume from "./Piyush_Vishwakarma.pdf";
 const certificatesDetail = {
     microlinkedin:{
         title:"Microsoft and LinkedIn",
-        disc:"Career Essential in Software Development by Microsoft and LinkedIn",
+        disc:"Career Essential in Software Development",
         link:"https://www.linkedin.com/learning/certificates/c44b6b2c519dcc03c04aedb306de9e82530d7a3ad56f235a6a316aec210835f9",
         icons:[ms,ln]
     },
@@ -39,7 +39,7 @@ function Certification() {
           variants={fadeIn("", 0.3)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.1 }}
+          viewport={{ once: true, amount: 0.1 }}
           id="project"
           className="font-fira text-1xl md:text-4xl md:mb-16 py-8 w-full h-10 gap-4 text-slate-100 font-light flex items-center"
         >
@@ -47,7 +47,7 @@ function Certification() {
           <div className=" w-60 md:w-[80%] h-[0.1rem] bg-slate-50"></div>
         </motion.h1>
 
-    <div id="certificats" className=" flex flex-col md:flex-row items-center  md:px-20  w-full h-fit ">
+    <div id="certificats" className=" flex flex-col md:flex-row items-center gap-4 justify-center  md:px-20  w-full h-fit ">
 
         {
             Object.entries(certificatesDetail).map(([key, value])=>{

@@ -72,19 +72,15 @@ function Nav() {
 
               </li>
             </a>
-            <a href="#About">
-            <li className=" flex flex-col justify-center items-center gap-1 cursor-pointer">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M15.68 3.96c.48.71.76 1.56.76 2.48-.01 2.4-1.9 4.35-4.28 4.43-.1-.01-.22-.01-.33 0-2.21-.07-4-1.76-4.24-3.92C7.3 4.38 9.41 2 11.99 2M6.99 14.56c-2.42 1.62-2.42 4.26 0 5.87 2.75 1.84 7.26 1.84 10.01 0 2.42-1.62 2.42-4.26 0-5.87-2.73-1.83-7.24-1.83-10.01 0Z" stroke="#d9e3f0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-              <h2 className=" font-ubuntu text-sm font-normal ">About</h2>
+           
 
-              </li>
-            </a>
             <a href="#Skills">
             <li className=" flex flex-col justify-center items-center gap-1 cursor-pointer">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6.89 9c.98.49 1.82 1.23 2.43 2.15.35.52.35 1.19 0 1.71-.61.91-1.45 1.65-2.43 2.14" stroke="#d9e3f0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M2 13.04V15c0 5 2 7 7 7h6c5 0 7-2 7-7V9c0-5-2-7-7-7H9C4 2 2 4 2 9M13 15h4" stroke="#d9e3f0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
               <h2 className=" font-ubuntu text-sm font-normal ">Skills</h2>
 
               </li>
+
             </a>
             <a href="#Projects">
             <li className=" flex flex-col justify-center items-center gap-1 cursor-pointer">
@@ -93,6 +89,15 @@ function Nav() {
 
               </li>
             </a>
+
+            <a href="#About">
+            <li className=" flex flex-col justify-center items-center gap-1 cursor-pointer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M15.68 3.96c.48.71.76 1.56.76 2.48-.01 2.4-1.9 4.35-4.28 4.43-.1-.01-.22-.01-.33 0-2.21-.07-4-1.76-4.24-3.92C7.3 4.38 9.41 2 11.99 2M6.99 14.56c-2.42 1.62-2.42 4.26 0 5.87 2.75 1.84 7.26 1.84 10.01 0 2.42-1.62 2.42-4.26 0-5.87-2.73-1.83-7.24-1.83-10.01 0Z" stroke="#d9e3f0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+              <h2 className=" font-ubuntu text-sm font-normal ">About</h2>
+
+              </li>
+            </a>
+
           </ul>
         </div>
       </div>

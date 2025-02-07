@@ -1,6 +1,6 @@
-  import React from 'react'
+
   import { motion } from "framer-motion";
-  import fadeIn from "./fadein.js";
+  import fadeIn from "../framer/fadein.js";
   import Projectcomp from '../component/Projectcomp.jsx';
   import artifex from "../assets/projectimg/artifex.png"
   import artdp from "../assets/projectimg/titlelogo2.webp"
@@ -11,7 +11,7 @@
   import uifryphone from "../assets/projectimg/uifryphone.png"
   import artifexphone from "../assets/projectimg/artifexphone.png"
   import portfoliophone from "../assets/projectimg/portfoliophone.png"
-  import { fire, fm, react, tailwind } from '../images/image.js';
+  import { ex, fire, fm, react, tailwind } from '../images/image.js';
 
 
   const projects = {
@@ -21,7 +21,7 @@
       discr: "This project is an innovative e-commerce platform showcases and sells custom sketches and artworks. Customers can view my portfolio, order custom sketches, and enjoy secure payments and reliable delivery.",
       link:"https://artifex2.vercel.app/",
       gitlink:"https://github.com/PiyushDev01/Artifex-v2",
-      tech:[react, tailwind, fire],
+      tech:[react, tailwind,ex, fire,],
       mobile: artifexphone
     },
     Uifry: {
@@ -52,7 +52,7 @@
           variants={fadeIn("up", 0.3)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.1 }}
+          viewport={{ once: true, amount: 0.1 }}
           id="project"
           className="font-fira text-1xl md:text-4xl py-8 w-full h-10 gap-4 text-slate-100 font-light flex items-center"
         >
@@ -63,7 +63,7 @@
 
         {Object.entries(projects).map(([key, value]) => {
             return <Projectcomp 
-            
+            key={key}
             title={key} 
             image={value.image} 
             dp={value.profile} 

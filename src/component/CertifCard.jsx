@@ -1,7 +1,9 @@
-    import React from 'react'
+
 import img from "../assets/certifi.png"
 import fadeIn from "../framer/fadein.js";
 import { motion } from "framer-motion";
+import SpotlightCard from "./SpotlightCard.jsx";
+
 
 function CertifCard(props) {
 
@@ -10,12 +12,8 @@ function CertifCard(props) {
 
   return (
     <>
-    <motion.div 
-    variants={fadeIn("", 0.3)}
-    initial="hidden"
-    whileInView={"show"}
-    viewport={{ once: false, amount: 0.1 }}
-    id="certcontainer" className= ' relative  transition-all flex flex-col  md:w-[20rem] md:min-h-[18rem] h-fit bg-transparent border-[1px] border-slate-500/20  overflow-hidden rounded-3xl p-6 mx-4 my-4 justify-between '>
+    <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(212, 154, 252, 0.2)">
+    
 
         <div className=' absolute w-[50%] h-[50%] blur-3xl  bg-purple-500/50 -bottom-[20%] -right-[20%] ' ></div>
         <div className=' absolute w-[50%] h-[50%] blur-3xl  bg-purple-500/25 -top-[40%] -left-[40%] ' ></div>
@@ -40,7 +38,8 @@ function CertifCard(props) {
                 
                 <button className='  flex gap-2 items-center  shadow-rose-500 my-4 transition-all hover:border-purple-400 border-transparent border-2 w-fit px-4 py-2 rounded-full text-sm md:text-base  bg-mybg text-zinc-200 font-light font-ubuntu  ' >Show Credential <span className=' text-xl text-purple-500 '>&#8599;</span> </button></a>
 
-    </motion.div>
+  
+    </SpotlightCard>
     </>
   )
 }
