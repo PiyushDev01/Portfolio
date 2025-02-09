@@ -13,7 +13,7 @@ function CertifCard(props) {
 
   return (
     <>
-    <SpotlightCard className="custom-spotlight-card min-w-[90%] md:min-w-[25%] flex flex-col justify-between max-h-[15rem] " spotlightColor="rgba(212, 154, 252, 0.2)">
+    <SpotlightCard className="custom-spotlight-card w-[90%] md:min-w-[25%] flex flex-col justify-between max-h-[15rem] " spotlightColor="rgba(212, 154, 252, 0.2)">
     
 
         <div className=' absolute w-[50%] h-[50%] blur-3xl  bg-purple-500/50 -bottom-[20%] -right-[20%] ' ></div>
