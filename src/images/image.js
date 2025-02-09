@@ -30,7 +30,9 @@ import mkty from "../assets/social/Monkeytype.png"
 import fm from "../assets/skills/framer-motion.png"
 import nxt from '../assets/skills/Next.js.svg'
 import ex from '../assets/skills/Express.svg'
+import gitfound from '../assets/certificate/github-foundations.png'
+import ibmnew from '../assets/certificate/ibmnew.png'
 
 export {
-  html,css,js,react,c,figma,fm,java,nxt,tailwind,vite, apw,ex ,boot,fire,git,ibm ,github,Node, py,image,linkedin,acc,github1,insta,leetcode,mail,whatsapp,ms,ln,mui,mkty
+  html,css,js,react,c,figma,fm,java,nxt,tailwind,gitfound,ibmnew,vite, apw,ex ,boot,fire,git,ibm ,github,Node, py,image,linkedin,acc,github1,insta,leetcode,mail,whatsapp,ms,ln,mui,mkty
 };
