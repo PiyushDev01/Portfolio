@@ -167,7 +167,7 @@ function Home() {
             <button
               class="button"
               onClick={() => {
-                alert("Udating Resume...Please check back later");
+                window.open(resume);
               }}
             >
               <span class="button-content">
