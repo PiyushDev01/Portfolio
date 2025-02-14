@@ -15,6 +15,8 @@ import { GradualSpacing } from '../framer/GradualSpacing';
 import { RotateWords } from '../framer/RotateWords';
 import Available from "../component/Available";
 import TiltedCard  from "../component/TiltedCard";
+import { Helmet } from 'react-helmet-async';
+
 
 
 function Home() {
@@ -26,6 +28,7 @@ function Home() {
     <>
       <Nav />
 
+      
       <div
         id="Home"
         className=" overflow-hidden flex flex-col relative bg-[#11111b] w-full pt-[4rem] md:pt-[10rem] h-fit "
