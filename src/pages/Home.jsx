@@ -37,7 +37,7 @@ function Home() {
 
       <div
         id="Home"
-        className=" overflow-hidden flex flex-col relative bg-[#11111b] w-full h-fit "
+        className=" overflow-hidden flex flex-col relative bg-[#11111b] pt-[4rem] w-full h-fit "
       >
         <svg
           id="third"
@@ -148,9 +148,9 @@ function Home() {
 
         <div
           id="hero"
-          className="flex flex-col md:flex-row w-full h-fit  gap-10 md:px-40"
+          className="flex flex-col md:flex-row w-full h-fit gap-10 md:px-40"
         >
-          <div id="left" className=" md:w-4/6 px-10 pt-[4rem] md:pt-[10rem]  ">
+          <div id="left" className=" md:w-4/6 px-10  md:pt-[10rem]  ">
             <h1 className=" font-custom text-1xl md:text-4xl py-3 tracking-wide text-slate-100 font-normal">
               Hey! It's me
             </h1>
