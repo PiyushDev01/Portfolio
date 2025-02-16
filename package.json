@@ -13,14 +13,19 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@react-three/drei": "^9.121.5",
+    "@react-three/fiber": "^8.17.14",
+    "@react-three/rapier": "^1.5.0",
     "@sentry/react": "^8.17.0",
     "framer-motion": "^11.2.11",
     "gh-pages": "^6.1.1",
+    "meshline": "^3.3.1",
     "motion": "^12.0.6",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-helmet-async": "^2.0.5",
-    "react-icons": "^5.4.0"
+    "react-icons": "^5.4.0",
+    "three": "^0.167.1"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",

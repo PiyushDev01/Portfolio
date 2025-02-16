@@ -1,4 +1,3 @@
-
 import Nav from "../component/Nav";
 import download from "../assets/downloadicon.png";
 import { motion } from "framer-motion";
@@ -9,29 +8,36 @@ import About from "./About";
 import Skills from "./Skills";
 import Project from "./Project";
 import Footer from "./Footer";
-import { image,linkedin,github1,insta,leetcode,mail,whatsapp, mkty } from "../images/image";
+import {
+  image,
+  linkedin,
+  github1,
+  insta,
+  leetcode,
+  mail,
+  whatsapp,
+  mkty,
+} from "../images/image";
 import Certification from "./Certification";
-import { GradualSpacing } from '../framer/GradualSpacing';
-import { RotateWords } from '../framer/RotateWords';
+import { GradualSpacing } from "../framer/GradualSpacing";
+import { RotateWords } from "../framer/RotateWords";
 import Available from "../component/Available";
-import TiltedCard  from "../component/TiltedCard";
-import { Helmet } from 'react-helmet-async';
+import TiltedCard from "../component/TiltedCard";
+import Lanyard from '../component/Lanyard/Lanyard';
+
 
 
 
 function Home() {
-
   const [imghover, setimghover] = useState(false);
 
-  
   return (
     <>
       <Nav />
 
-      
       <div
         id="Home"
-        className=" overflow-hidden flex flex-col relative bg-[#11111b] w-full pt-[4rem] md:pt-[10rem] h-fit "
+        className=" overflow-hidden flex flex-col relative bg-[#11111b] w-full h-fit "
       >
         <svg
           id="third"
@@ -142,9 +148,9 @@ function Home() {
 
         <div
           id="hero"
-          className="flex flex-col md:flex-row w-full h-fit px-10 md:py-10 md:px-40"
+          className="flex flex-col md:flex-row w-full h-fit  gap-10 md:px-40"
         >
-          <div id="hero" className=" md:w-4/6 ">
+          <div id="left" className=" md:w-4/6 px-10 pt-[4rem] md:pt-[10rem]  ">
             <h1 className=" font-custom text-1xl md:text-4xl py-3 tracking-wide text-slate-100 font-normal">
               Hey! It's me
             </h1>
@@ -220,45 +226,19 @@ function Home() {
               </a>
             </div>
           </div>
+           {/* for pc view */}
+                <div id="right" className=" md:block hidden absolute w-[120vw] -mt-10 ">
+                <Lanyard position={[0, 0, 10]} gravity={[0, -40, 0]} />
 
-          <div
-            id="sideImage"
-            className="py-16 z-10 px-4 w-full h-full md:w-2/6  "
-          >
+                </div>
+           {/* for mobile view */}
+                <div id="right" className=" md:hidden overflow-hidden  w-[100vw] -mt-10 ">
+                  <div className="flex justify-center -mt-40 ">
+                  <Lanyard position={[0, 0 ,12]} gravity={[0, -40, 0]} />
+                  </div>
 
-            {/* this for mobile view */}
-            <motion.div 
-            animate={{ rotate: imghover ? 0 : 0 }}
-
-            className=" backimage flex md:hidden justify-center rotate-6 rounded-2xl bg-slate-800">
-              <motion.img
-              animate={{ rotate: imghover ? 0 : 10 }}
-                src={image}
-                className="  shadow-2xl -rotate-6  rounded-3xl"
-                onMouseEnter={() => setimghover(true)}
-                onMouseLeave={() => setimghover(false)}
-                alt=""
-              />
-            </motion.div>
-{/* this for only pc view  */}
-            <TiltedCard
-              imageSrc={image}
-              altText="Kendrick Lamar - GNX Album Cover"
-              captionText="Piyush Vishwakarma"
-              containerHeight="300px"
-              containerWidth="300px"
-              imageHeight="20rem"
-              imageWidth="20rem"
-              rotateAmplitude={20}
-              scaleOnHover={1.08}
-              showMobileWarning={false}
-              showTooltip={true}
-              displayOverlayContent={false}
-              overlayContent={
-                <p className=" bg-mybg/50 rounded-full p-3 text-white  backdrop:blur-lg ">Piyush Vishwakarma</p>
-              }
-            />
-          </div>
+                </div>
+         
         </div>
 
         {/* skills section started */}
