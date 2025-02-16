@@ -37,7 +37,7 @@ function Home() {
 
       <div
         id="Home"
-        className=" overflow-hidden flex flex-col relative bg-[#11111b] pt-[4rem] w-full h-fit "
+        className=" overflow-hidden flex flex-col relative bg-[#11111b] pt-[4rem] md:pt-0 w-full h-fit "
       >
         <svg
           id="third"
