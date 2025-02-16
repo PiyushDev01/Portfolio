@@ -154,25 +154,20 @@ function Home() {
             <h1 className=" font-custom text-1xl md:text-4xl py-3 tracking-wide text-slate-100 font-normal">
               Hey! It's me
             </h1>
-            {/* <h1 className="font-ubuntu text-4xl md:text-7xl font-semibold bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500 inline-block py-3 bg-clip-text text-transparent">
-              Piyush Vishwakarma.
-            </h1> */}
+            
             <GradualSpacing text="Piyush " />
             <GradualSpacing text="Vishwakarma" />
             <br />
-            {/* <h1 className=" font-custom text-4xl md:text-7xl text-slate-100 ">
-              I design & code for web.
-            </h1> */}
+            
             <RotateWords />
             <p className=" md:w-2/3 font-custom trac text-sm md:text-lg text-slate-400 py-6">
               I enjoy creating engaging web UI and collaborating to develop
               innovative products.
               <br />
-              {/* <br />I value simple content structure, clean design patterns, and
-              thoughtful interactions. */}
+              
             </p>
 
-            {/* <a href={resume} target="_blank" > */}
+           
             <button
               class="button"
               onClick={() => {
