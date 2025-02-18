@@ -167,26 +167,28 @@ function Home() {
               
             </p>
 
-           
             <button
-              class="button"
+              className="button z-[1] "
               onClick={() => {
                 window.open(resume);
               }}
             >
-              <span class="button-content">
+              <span className="button-content">
                 {" "}
                 <img src={download} className=" w-4 h-4" alt="" /> Resume{" "}
               </span>
             </button>
-            {/* </a> */}
+
+
             <div
               id="social"
-              className=" items-center saturate-0 flex justify-between w-full py-10 md:gap-8  md:w-fit"
+              className=" items-center saturate-0 flex  z-10  justify-between w-full py-10 md:gap-8  md:w-fit"
+           
             >
               <a
                 href="https://www.linkedin.com/in/artifexpiyush/"
                 target="_blank"
+                
               >
                 <img className=" w-8" src={linkedin} alt="" />
               </a>
@@ -222,8 +224,8 @@ function Home() {
             </div>
           </div>
            {/* for pc view */}
-                <div id="right" className=" md:block hidden absolute w-[120vw] -mt-10 ">
-                <Lanyard position={[0, 0, 10]} gravity={[0, -40, 0]} />
+                <div id="right" className=" md:block hidden h-[120vh]   absolute w-[170vw] -left-40 -mt-18 ">
+                <Lanyard position={[0, 0, 12]} gravity={[0, -40, 0]} />
 
                 </div>
            {/* for mobile view */}

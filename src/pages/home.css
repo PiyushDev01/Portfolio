@@ -10,6 +10,8 @@
     border: none;
     cursor: pointer;
   }
+
+
   
   .button:hover::before {
     transform: scaleX(1);
@@ -44,13 +46,24 @@
   
 
   .backimage{
+    z-index: -5;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   }
 
+  #right{
+    z-index: 0;
+  }
+
+#social{
+  position: relative;
+}
+
   #social img{
       transition: 0.2s filter;
+      z-index: 1;
       
   }
+  
  
   #social img:hover{
     filter: brightness(2);
