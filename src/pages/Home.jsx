@@ -24,6 +24,7 @@ import { RotateWords } from "../framer/RotateWords";
 import Available from "../component/Available";
 import TiltedCard from "../component/TiltedCard";
 import Lanyard from '../component/Lanyard/Lanyard';
+import Like from './../component/Like';
 
 
 
@@ -166,8 +167,8 @@ function Home() {
               <br />
               
             </p>
-
-            <button
+            <div className=" flex gap-4 md:gap-8 items-center"> 
+               <button
               className="button z-[1] "
               onClick={() => {
                 window.open(resume);
@@ -178,6 +179,10 @@ function Home() {
                 <img src={download} className=" w-4 h-4" alt="" /> Resume{" "}
               </span>
             </button>
+            <Like />
+            </div>
+           
+
 
 
             <div
