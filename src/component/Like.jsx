@@ -1,14 +1,53 @@
-
+import  {useState, useEffect } from 'react';
 import './style.css'
-// import SlotCounter from 'react-slot-counter';
+import SlotCounter from 'react-slot-counter';
+import { ref, onValue } from "firebase/database";
+import { addLike, removeLike } from '../firebase/CRUD/operation.js'
+import { database } from '../firebase/firebase.js';
 
 function Like() {
-  return (
-    <div className=' text-white'>
 
+
+    const [value, setValue] = useState('00');
+
+
+    const handleChange = (e) => {   
+        const isChecked = e.target.checked;
+        if (isChecked) {
+            setValue(value + 1);
+            addLike(value);
+        } else {
+            setValue(value - 1);
+            removeLike(value);
+        }
+        localStorage.setItem('likeChecked', isChecked);
+    }
+
+    // Retrieve the checked state from local storage when the component mounts
+    useEffect(() => {
+        const storedChecked = localStorage.getItem('likeChecked') === 'true';
+        document.getElementById('Give-It-An-Id').checked = storedChecked;
+        if (storedChecked) {
+            setValue(value + 1);
+        }
+        
+        const dbRef = ref(database, "portfolio/likes"); // Path in the database
+        onValue(dbRef, (snapshot) => {
+            if (snapshot.exists()) {
+                setValue(snapshot.val().like);
+            } else {
+                console.log("No data available");
+            }
+        }   
+        );
+
+    }, []);
+
+  return (
+    <div className=' flex gap-2 text-white font-custom text-2xl '>
 
 <div title="Like" className="heart-container">
-            <input id="Give-It-An-Id" className="checkbox" type="checkbox" />
+            <input id="Give-It-An-Id" className="checkbox" onChange={handleChange} type="checkbox" />
             <div className="svg-container">
                 <svg xmlns="http://www.w3.org/2000/svg" class="svg-outline" viewBox="0 0 24 24">
                     <path d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z">
@@ -29,7 +68,7 @@ function Like() {
             </div>
         </div>
 
-        {/* <SlotCounter value={['1', '2', '3', '4', '5', '6']} /> */}
+        <SlotCounter value={value} />
 
     </div>
   )
