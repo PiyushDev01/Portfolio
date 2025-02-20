@@ -8,7 +8,7 @@ import { database } from '../firebase/firebase.js';
 function Like() {
 
 
-    const [value, setValue] = useState('000');
+    const [value, setValue] = useState(0);
 
 
     const handleChange = (e) => {   
