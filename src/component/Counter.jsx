@@ -57,7 +57,7 @@ export default function Counter({
   places = [100, 10, 1],
   gap = 8,
   borderRadius = 4,
-  horizontalPadding = 8,
+  horizontalPadding = 0,
   textColor = "white",
   fontWeight = "bold",
   containerStyle,
@@ -77,7 +77,7 @@ export default function Counter({
   };
 
   const defaultCounterStyle = {
-    fontSize,
+    
     display: "flex",
     gap: gap,
     overflow: "hidden",
@@ -114,7 +114,7 @@ export default function Counter({
 
   return (
     <div style={{ ...defaultContainerStyle, ...containerStyle }}>
-      <div style={{ ...defaultCounterStyle, ...counterStyle }}>
+      <div style={{ ...defaultCounterStyle, ...counterStyle }} className=" text-xl" >
         {places.map((place) => (
           <Digit
             key={place}
