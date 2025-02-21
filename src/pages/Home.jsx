@@ -38,7 +38,7 @@ function Home() {
 
       <div
         id="Home"
-        className=" overflow-hidden flex flex-col relative bg-[#11111b] pt-[4rem] md:pt-0 w-full h-fit "
+        className=" overflow-hidden flex flex-col relative bg-[#0b0b14] pt-[3rem] md:pt-0 w-full h-fit "
       >
         <svg
           id="third"
@@ -234,10 +234,11 @@ function Home() {
 
                 </div>
            {/* for mobile view */}
-                <div id="right" className=" md:hidden overflow-hidden  w-[100vw] -mt-10 ">
+                <div id="right" className=" relative md:hidden overflow-hidden  w-[100vw] -mt-10 ">
                   <div className="flex justify-center -mt-40 ">
                   <Lanyard position={[0, 0 ,12]} gravity={[0, -40, 0]} />
                   </div>
+                  <div className=" w-full h-[100vh]  top-0 absolute"></div>
 
                 </div>
          
