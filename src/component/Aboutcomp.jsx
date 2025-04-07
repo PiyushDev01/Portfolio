@@ -22,7 +22,7 @@ function Aboutcomp() {
           id="about-heading"
           className="sr-only"
         >
-          About me
+          About me - Web Developer & Designer
         </h1>
         <LettersPullUp 
           text="About me" 
@@ -49,6 +49,23 @@ function Aboutcomp() {
               {el}{" "}
             </motion.p>
           ))}
+        </div>
+
+        {/* Hidden SEO content */}
+        <div className="sr-only">
+          <h2>Skills & Expertise</h2>
+          <ul>
+            <li>Web Development</li>
+            <li>React.js Development</li>
+            <li>JavaScript Programming</li>
+            <li>Python Development</li>
+            <li>Node.js Backend Development</li>
+            <li>MongoDB Database Management</li>
+            <li>Machine Learning</li>
+            <li>Artificial Intelligence</li>
+            <li>UI/UX Design</li>
+            <li>Responsive Web Design</li>
+          </ul>
         </div>
       </div>
     </section>

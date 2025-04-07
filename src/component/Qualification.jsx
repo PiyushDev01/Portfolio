@@ -1,7 +1,4 @@
-import React from "react";
 import QualiSec from "./QualiSec";
-import { motion } from "framer-motion";
-import fadeIn from "../framer/fadein.js";
 import { FaUserGraduate } from "react-icons/fa6";
 import { LettersPullUp } from './../framer/LettersPullUp';
 
@@ -24,15 +21,9 @@ const QualificationDetails = { q1: {
     
     cur: true,
     },
-
 }
 
-
-
 function Qualification() {
-
- 
-
   return (
     <section 
       id="container" 
@@ -59,7 +50,7 @@ function Qualification() {
           id="qualification-heading"
           className="sr-only"
         >
-          Qualifications
+          Qualifications - Education History
         </h1>
         <LettersPullUp 
           text="Qualification" 
@@ -79,6 +70,27 @@ function Qualification() {
             role="listitem"
           />
         ))} 
+      </div>
+
+      {/* Hidden SEO content */}
+      <div className="sr-only">
+        <h2>Education History</h2>
+        <div itemScope itemType="http://schema.org/EducationEvent">
+          <h3>Higher Secondary Education</h3>
+          <p itemProp="name">Daffodils Public School</p>
+          <p itemProp="location">Mirzapur, Uttar Pradesh</p>
+          <p itemProp="startDate">2020</p>
+          <p itemProp="endDate">2021</p>
+          <p itemProp="description">Completed 12th grade with 91% in Science Stream</p>
+        </div>
+        <div itemScope itemType="http://schema.org/EducationEvent">
+          <h3>Bachelor of Technology</h3>
+          <p itemProp="name">Galgotias College of Engineering and Technology</p>
+          <p itemProp="location">Noida, Uttar Pradesh</p>
+          <p itemProp="startDate">2022</p>
+          <p itemProp="endDate">2026</p>
+          <p itemProp="description">Computer Science Engineering with specialization in Artificial Intelligence and Machine Learning</p>
+        </div>
       </div>
     </section>
   );

@@ -1,12 +1,11 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import PropTypes from 'prop-types';
 import git from "../assets/skills/GitHub.png";
 import "./project.css";
 import { motion } from "framer-motion";
 import fadeIn from "../framer/fadein.js";
 
-
 function Projectcomp(props) {
-  // const techs = props.tech;
   const { title, image, dp, discr, link, gitlink, techs, mobile } = props;
   const [isExpanded, setIsExpanded] = useState(false);
 
@@ -35,12 +34,12 @@ function Projectcomp(props) {
           className="w-[3rem] shadow-md shadow-slate-950 rounded-full" 
           alt={`${title} project logo`} 
         />
-        <h1 
+        <h2 
           id={`project-title-${title.replace(/\s+/g, '-').toLowerCase()}`}
           className="font-ubuntu text-2xl md:text-4xl text-slate-100 py-4"
         >
           {title}
-        </h1>
+        </h2>
         <div
           className={`relative overflow-hidden cursor-pointer ${isExpanded ? 'h-auto max-h-40' : 'h-10 max-h-10'} transition-height duration-300 ease-in`}
           onClick={() => setIsExpanded(!isExpanded)}
@@ -132,8 +131,29 @@ function Projectcomp(props) {
           alt={`${title} project mobile view`}
         />
       </div>
+
+      {/* Hidden SEO content */}
+      <div className="sr-only">
+        <h3>Project Details</h3>
+        <p>Project Name: {title}</p>
+        <p>Description: {discr}</p>
+        <p>Technologies: {techs ? techs.join(', ') : 'Not specified'}</p>
+        <p>View Project: <a href={link}>Live Demo</a></p>
+        <p>Source Code: <a href={gitlink}>GitHub Repository</a></p>
+      </div>
     </motion.article>
   );
 }
+
+Projectcomp.propTypes = {
+  title: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  dp: PropTypes.string.isRequired,
+  discr: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
+  gitlink: PropTypes.string.isRequired,
+  techs: PropTypes.arrayOf(PropTypes.string),
+  mobile: PropTypes.string.isRequired
+};
 
 export default Projectcomp;
