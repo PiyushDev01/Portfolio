@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
+import PropTypes from 'prop-types';
 import { motion } from "framer-motion";
 import fadeIn from "../framer/fadein.js"
 import Exbar from './Exbar.jsx';
@@ -44,8 +45,23 @@ function Techstack(props) {
                 alt={`${props.title} logo`} 
             />
             <Exbar l={lvl} />
+
+            {/* Hidden SEO content */}
+            <div className="sr-only">
+                <h3>Technical Skill: {props.title}</h3>
+                <p>Proficiency Level: {lvl}%</p>
+                <p>Category: {props.title} Development</p>
+                <p>Related Technologies: {props.title} ecosystem, frameworks, and tools</p>
+            </div>
         </motion.div>
     );
 }
+
+Techstack.propTypes = {
+    l: PropTypes.number.isRequired,
+    link: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired
+};
 
 export default Techstack;
