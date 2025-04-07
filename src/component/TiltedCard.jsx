@@ -21,6 +21,8 @@ export default function TiltedCard({
   showTooltip = true,
   overlayContent = null,
   displayOverlayContent = false,
+  role = "figure",
+  ariaLabel = "Interactive 3D card",
 }) {
   const ref = useRef(null);
   const x = useMotionValue(0);
@@ -71,6 +73,12 @@ export default function TiltedCard({
     rotateFigcaption.set(0);
   }
 
+  function handleKeyDown(e) {
+    if (e.key === 'Enter' || e.key === ' ') {
+      handleMouseEnter();
+    }
+  }
+
   return (
     <figure
       ref={ref}
@@ -82,9 +90,13 @@ export default function TiltedCard({
       onMouseMove={handleMouse}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
+      onKeyDown={handleKeyDown}
+      role={role}
+      aria-label={ariaLabel}
+      tabIndex="0"
     >
       {showMobileWarning && (
-        <div className="absolute top-4 text-center text-sm block sm:hidden">
+        <div className="absolute top-4 text-center text-sm block sm:hidden" role="alert" aria-live="polite">
           This effect is not optimized for mobile. Check on desktop.
         </div>
       )}
@@ -98,6 +110,7 @@ export default function TiltedCard({
           rotateY,
           scale,
         }}
+        aria-hidden="true"
       >
         <motion.img
           src={imageSrc}
@@ -112,6 +125,8 @@ export default function TiltedCard({
         {displayOverlayContent && overlayContent && (
           <motion.div
             className="absolute top-0 left-0 z-[2] will-change-transform [transform:translateZ(30px)]"
+            role="complementary"
+            aria-label="Overlay content"
           >
             {overlayContent}
           </motion.div>
@@ -127,6 +142,7 @@ export default function TiltedCard({
             opacity,
             rotate: rotateFigcaption,
           }}
+          aria-hidden={!opacity.get()}
         >
           {captionText}
         </motion.figcaption>

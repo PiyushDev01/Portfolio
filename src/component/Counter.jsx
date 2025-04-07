@@ -23,7 +23,15 @@ function Number({ mv, number, height }) {
     justifyContent: "center",
   };
 
-  return <motion.span style={{ ...style, y }}>{number}</motion.span>;
+  return (
+    <motion.span 
+      style={{ ...style, y }}
+      role="presentation"
+      aria-hidden="true"
+    >
+      {number}
+    </motion.span>
+  );
 }
 
 function Digit({ place, value, height, digitStyle }) {
@@ -42,7 +50,11 @@ function Digit({ place, value, height, digitStyle }) {
   };
 
   return (
-    <div style={{ ...defaultStyle, ...digitStyle }}>
+    <div 
+      style={{ ...defaultStyle, ...digitStyle }}
+      role="figure"
+      aria-label={`Digit at ${place} place`}
+    >
       {Array.from({ length: 10 }, (_, i) => (
         <Number key={i} mv={animatedValue} number={i} height={height} />
       ))}
@@ -68,6 +80,8 @@ export default function Counter({
   gradientTo = "transparent",
   topGradientStyle,
   bottomGradientStyle,
+  ariaLabel = "Counter",
+  ariaLive = "polite",
 }) {
   const height = fontSize + padding;
 
@@ -77,7 +91,6 @@ export default function Counter({
   };
 
   const defaultCounterStyle = {
-    
     display: "flex",
     gap: gap,
     overflow: "hidden",
@@ -87,7 +100,6 @@ export default function Counter({
     lineHeight: 1,
     color: textColor,
     fontWeight: fontWeight,
-    
   };
 
   const gradientContainerStyle = {
@@ -113,8 +125,17 @@ export default function Counter({
   };
 
   return (
-    <div style={{ ...defaultContainerStyle, ...containerStyle }}>
-      <div style={{ ...defaultCounterStyle, ...counterStyle }} className=" text-xl" >
+    <div 
+      style={{ ...defaultContainerStyle, ...containerStyle }}
+      role="status"
+      aria-label={ariaLabel}
+      aria-live={ariaLive}
+    >
+      <div 
+        style={{ ...defaultCounterStyle, ...counterStyle }} 
+        className="text-xl"
+        role="presentation"
+      >
         {places.map((place) => (
           <Digit
             key={place}
@@ -125,9 +146,10 @@ export default function Counter({
           />
         ))}
       </div>
-      <div style={gradientContainerStyle}>
+      <div style={gradientContainerStyle} role="presentation">
         <div
           style={topGradientStyle ? topGradientStyle : defaultTopGradientStyle}
+          aria-hidden="true"
         />
         <div
           style={
@@ -135,6 +157,7 @@ export default function Counter({
               ? bottomGradientStyle
               : defaultBottomGradientStyle
           }
+          aria-hidden="true"
         />
       </div>
     </div>

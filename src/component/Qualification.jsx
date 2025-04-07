@@ -34,35 +34,53 @@ function Qualification() {
  
 
   return (
-    <>
-      <div id="container" className=" md:w-[50%]   h-fit p-[2rem] ">
-      <div id="qtitle" className=" flex ">
-        <div id="qlogo" className=" w-12 flex items-center justify-center rounded-full border-[0px] bg-gradient-to-t from-transparent  to-slate-400/30 border-slate-400 -translate-x-[50%]">
-        <FaUserGraduate className=" text-white scale-125 " />
-
-        </div>
-      {/* <motion.h1 
-      variants={fadeIn("", 0.3)}
-      initial="hidden"
-      whileInView={"show"}
-      viewport={{ once: true, amount: 0.1 }}
-      className=" md:text-5xl font-ubuntu text-3xl text-white font-semibold text-left">Qualifications<span className=" text-indigo-400">.</span></motion.h1> */}
-      <LettersPullUp text="Qualification" />
-      </div>
-        <div
-          id="innercont"
-          className=" w-full h-fit flex flex-col  border-l-2 border-slate-700"
+    <section 
+      id="container" 
+      className="md:w-[50%] h-fit p-[2rem]"
+      aria-labelledby="qualification-heading"
+    >
+      <div 
+        id="qtitle" 
+        className="flex"
+        role="group"
+        aria-label="Qualification section header"
+      >
+        <div 
+          id="qlogo" 
+          className="w-12 flex items-center justify-center rounded-full border-[0px] bg-gradient-to-t from-transparent to-slate-400/30 border-slate-400 -translate-x-[50%]"
+          aria-hidden="true"
         >
-          {
-            Object.keys(QualificationDetails).map((key,index)=>{
-              return <QualiSec key={index} {...QualificationDetails[key]} />
-            })
-          } 
-          
-          
+          <FaUserGraduate 
+            className="text-white scale-125" 
+            aria-hidden="true"
+          />
         </div>
+        <h1 
+          id="qualification-heading"
+          className="sr-only"
+        >
+          Qualifications
+        </h1>
+        <LettersPullUp 
+          text="Qualification" 
+          aria-hidden="true"
+        />
       </div>
-    </>
+      <div
+        id="innercont"
+        className="w-full h-fit flex flex-col border-l-2 border-slate-700"
+        role="list"
+        aria-label="Education timeline"
+      >
+        {Object.keys(QualificationDetails).map((key, index) => (
+          <QualiSec 
+            key={index} 
+            {...QualificationDetails[key]} 
+            role="listitem"
+          />
+        ))} 
+      </div>
+    </section>
   );
 }
 
