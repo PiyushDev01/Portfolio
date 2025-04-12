@@ -10,30 +10,37 @@ function Like() {
     const [isChecked, setIsChecked] = useState(false);
     const [isInitialized, setIsInitialized] = useState(false);
 
-    const handleChange = (e) => {   
+    const handleChange = async (e) => {   
         const newChecked = e.target.checked;
-        setIsChecked(newChecked);
         
-        if (newChecked) {
-            addLike(value);
-        } else {
-            removeLike(value);
+        try {
+            if (newChecked) {
+                await addLike();
+            } else {
+                await removeLike();
+            }
+            // Only update the state and localStorage if the operation was successful
+            setIsChecked(newChecked);
+            localStorage.setItem('likeChecked', newChecked);
+        } catch (error) {
+            console.error('Error updating like:', error);
+            // Revert the checkbox state if the operation failed
+            e.target.checked = !newChecked;
         }
-        localStorage.setItem('likeChecked', newChecked);
     }
 
     useEffect(() => {
         // Get the stored liked state from localStorage
         const storedChecked = localStorage.getItem('likeChecked') === 'true';
         
-        // Set up Firebase listener first to get the current value
+        // Set up Firebase listener
         const dbRef = ref(database, "portfolio/likes");
         const unsubscribe = onValue(dbRef, (snapshot) => {
             if (snapshot.exists()) {
                 const currentLikes = snapshot.val().like;
                 setValue(currentLikes);
                 
-                // Only run this logic once after initialization
+                // Only set the initial checked state once
                 if (!isInitialized) {
                     setIsChecked(storedChecked);
                     setIsInitialized(true);
@@ -44,7 +51,6 @@ function Like() {
             }
         });
 
-        // Clean up the listener when component unmounts
         return () => unsubscribe();
     }, []);
 

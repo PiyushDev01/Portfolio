@@ -1,34 +1,40 @@
 import { database } from "../firebase";
-import { ref, set, get } from "firebase/database";
+import { ref, set, get, update } from "firebase/database";
 
-const addLike = (like) => {
-  // First get the current value to make sure we're incrementing correctly
-  const dbRef = ref(database, "portfolio/likes");
-  
-  return get(dbRef).then((snapshot) => {
-    const newLike = snapshot.exists() ? snapshot.val().like + 1 : 1;
+const addLike = async () => {
+  try {
+    const dbRef = ref(database, "portfolio/likes");
+    const snapshot = await get(dbRef);
     
-    return set(dbRef, {
-      like: newLike
-    })
-    .then(() => console.log("Like added successfully!"))
-    .catch((error) => console.error("Error writing data:", error));
-  });
+    if (snapshot.exists()) {
+      const currentLikes = snapshot.val().like || 0;
+      await update(dbRef, { like: currentLikes + 1 });
+    } else {
+      await set(dbRef, { like: 1 });
+    }
+    console.log("Like added successfully!");
+  } catch (error) {
+    console.error("Error adding like:", error);
+    throw error;
+  }
 };
 
-const removeLike = (like) => {
-  // First get the current value to make sure we're decrementing correctly
-  const dbRef = ref(database, "portfolio/likes");
-  
-  return get(dbRef).then((snapshot) => {
-    const newLike = snapshot.exists() ? Math.max(0, snapshot.val().like - 1) : 0;
+const removeLike = async () => {
+  try {
+    const dbRef = ref(database, "portfolio/likes");
+    const snapshot = await get(dbRef);
     
-    return set(dbRef, {
-      like: newLike
-    })
-    .then(() => console.log("Like removed successfully!"))
-    .catch((error) => console.error("Error writing data:", error));
-  });
+    if (snapshot.exists()) {
+      const currentLikes = snapshot.val().like || 0;
+      await update(dbRef, { like: Math.max(0, currentLikes - 1) });
+    } else {
+      await set(dbRef, { like: 0 });
+    }
+    console.log("Like removed successfully!");
+  } catch (error) {
+    console.error("Error removing like:", error);
+    throw error;
+  }
 };
 
 export { addLike, removeLike };
