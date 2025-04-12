@@ -8,36 +8,44 @@ import Counter from './Counter.jsx';
 function Like() {
     const [value, setValue] = useState(0);
     const [isChecked, setIsChecked] = useState(false);
+    const [isInitialized, setIsInitialized] = useState(false);
 
     const handleChange = (e) => {   
         const newChecked = e.target.checked;
         setIsChecked(newChecked);
         
         if (newChecked) {
-            setValue(value + 1);
             addLike(value);
         } else {
-            setValue(value - 1);
             removeLike(value);
         }
         localStorage.setItem('likeChecked', newChecked);
     }
 
     useEffect(() => {
+        // Get the stored liked state from localStorage
         const storedChecked = localStorage.getItem('likeChecked') === 'true';
-        setIsChecked(storedChecked);
-        if (storedChecked) {
-            setValue(value + 1);
-        }
         
+        // Set up Firebase listener first to get the current value
         const dbRef = ref(database, "portfolio/likes");
-        onValue(dbRef, (snapshot) => {
+        const unsubscribe = onValue(dbRef, (snapshot) => {
             if (snapshot.exists()) {
-                setValue(snapshot.val().like);
+                const currentLikes = snapshot.val().like;
+                setValue(currentLikes);
+                
+                // Only run this logic once after initialization
+                if (!isInitialized) {
+                    setIsChecked(storedChecked);
+                    setIsInitialized(true);
+                }
             } else {
                 console.log("No data available");
+                setIsInitialized(true);
             }
         });
+
+        // Clean up the listener when component unmounts
+        return () => unsubscribe();
     }, []);
 
     return (
@@ -55,6 +63,7 @@ function Like() {
                 <input
                     id="like-checkbox"
                     className="checkbox"
+                    checked={isChecked}
                     onChange={handleChange}
                     type="checkbox"
                     aria-label="Like checkbox"
