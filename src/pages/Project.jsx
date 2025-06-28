@@ -11,6 +11,9 @@
   import uifryphone from "../assets/projectimg/uifryphone.png"
   import artifexphone from "../assets/projectimg/artifexphone.png"
   import portfoliophone from "../assets/projectimg/portfoliophone.png"
+  import doingphone from "../assets/projectimg/doingphone.png";
+  import doing from "../assets/projectimg/doing.png";
+  import doingdp from "../assets/projectimg/doingdp.png";
   import { ex, fire, fm, react, tailwind } from '../images/image.js';
 
 
@@ -33,6 +36,16 @@
       tech:[react, tailwind],
       mobile: uifryphone
     },
+     Doing: {
+      profile: doingdp, 
+      image: doing, 
+      discr: "A modern productivity platform combining task management, coding practice tracking, and time management tools in a customizable widget-based interface. Built with React/TypeScript, featuring local data storage, comprehensive analytics, and integrations for LeetCode practice and Pomodoro sessions.",
+      link:"https://www.doing.works/",
+      gitlink:"https://github.com/PiyushDev01/todotrack",
+      tech:[react, fm, tailwind,],
+      mobile: doingphone
+    }
+    ,
     Portfolio: {
       profile: portdp, 
       image: portfolio, 
@@ -41,7 +54,8 @@
       gitlink:"https://github.com/PiyushDev01/Portfolio",
       tech:[react, fm, tailwind,],
       mobile: portfoliophone
-    }
+    },
+   
   };
 
   function Project() {
