@@ -17,6 +17,7 @@
     "@react-three/fiber": "^8.17.14",
     "@react-three/rapier": "^1.5.0",
     "@sentry/react": "^8.17.0",
+    "@vercel/analytics": "^1.5.0",
     "express": "^4.21.2",
     "firebase": "^11.3.1",
     "framer-motion": "^11.2.11",
