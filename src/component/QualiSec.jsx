@@ -14,7 +14,7 @@ function QualiSec(props) {
   return (
     <article
       id="qualifications"
-      className="relative text-left w-full h-fit mt-4 pr-0 p-[1rem]"
+      className="relative text-left w-full h-fit  pr-0 p-[1rem]"
       role="article"
       aria-label={`Education at ${clg} from ${from} to ${to}`}
     >

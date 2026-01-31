@@ -4,7 +4,7 @@ import { LettersPullUp } from './../framer/LettersPullUp';
 
 function Aboutcomp() {
 
-  const text = " Hi there! I'm web developer & designer who likes to write code and make new stuff. I'm pursuing Bachelor of Technology in Computer Science Engineering with a focus within machine learning and artificial intelligence. I'm always willing to learn about and experiment with new technologies. I am skilled in many programming languages and technologies, including Java, JavaScript, Python, React, Node.js, and MongoDB. I'm constantly looking for new projects to work on and possibilities to interact with other devs. I'm excited to grow as a developer, learn new things, and contribute to the tech sector.".split(" ");
+  const text = " Hi there! I'm Fullstack web developer & designer who likes to write code and make new stuff. I'm pursuing Bachelor of Technology in Computer Science Engineering with a focus within machine learning and artificial intelligence. I'm always willing to learn about and experiment with new technologies. I am skilled in many programming languages and technologies, including Java, JavaScript, Python, React, Node.js, and MongoDB. I'm constantly looking for new projects to work on and possibilities to interact with other devs. I'm excited to grow as a developer, learn new things, and contribute to the tech sector.".split(" ");
 
   return (
     <section 

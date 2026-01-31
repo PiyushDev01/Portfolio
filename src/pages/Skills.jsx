@@ -3,7 +3,7 @@ import React from "react";
 import Techstack from "../component/Techstack";
 import { motion } from "framer-motion";
 import fadeIn from "../framer/fadein.js";
-import {html,css,js,react,c,figma,java,tailwind,vite,boot, fire,git,github,Node,py,ex, mui,apw, nxt} from "../images/image.js";
+import {html,css,js,react,c,springboot,mysql,figma,java,tailwind,vite,boot,redux, fire,git,github,Node,py,ex, mui,apw, nxt} from "../images/image.js";
 import { LettersPullUp } from './../framer/LettersPullUp';
 
 const skills = {
@@ -11,21 +11,24 @@ const skills = {
   CSS3: [css, 1, "https://developer.mozilla.org/en-US/docs/Web/CSS"],
   JS: [js, 1, "https://developer.mozilla.org/en-US/docs/Web/JavaScript"],
   React: [react, 1, "https://reactjs.org/"],
+  Nodejs: [Node, 1, "https://nodejs.org/"],
+  Redux: [redux, 1, "https://redux.js.org/"],
   Vite: [vite, 1, "https://vitejs.dev/"],
-  "Next⠀js": [nxt, 3, "https://nextjs.org/"],
-  Appwrite: [apw, 2, "https://appwrite.io/"],
   Firebase: [fire, 1, "https://firebase.google.com/"],
-  Nodejs: [Node, 2, "https://nodejs.org/"],
-  Express: [ex, 2, "https://expressjs.com/"],
   Tailwind: [tailwind, 1, "https://tailwindcss.com/"],
-  Bootstrap: [boot, 1, "https://getbootstrap.com/"],
+  // Bootstrap: [boot, 1, "https://getbootstrap.com/"],
   "Material⠀UI": [mui, 1, "https://mui.com/"],
   Figma: [figma, 1, "https://www.figma.com/"],
   Java: [java, 1, "https://www.java.com/"],
+  Springboot: [springboot, 2, "https://spring.io/projects/spring-boot"],
+  MySQL: [mysql, 2, "https://www.mysql.com/"],
   C: [c, 1, "https://en.wikipedia.org/wiki/C_(programming_language)"],
-  Python: [py, 2, "https://www.python.org/"],
   GitHub: [github, 1, "https://github.com/"],
   Git: [git, 1, "https://git-scm.com/"],
+  // Appwrite: [apw, 2, "https://appwrite.io/"],
+  Express: [ex, 2, "https://expressjs.com/"],
+  Python: [py, 2, "https://www.python.org/"],
+  "Next⠀js": [nxt, 3, "https://nextjs.org/"],
 };
 
 function Skills() {

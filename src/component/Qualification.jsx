@@ -2,7 +2,8 @@ import QualiSec from "./QualiSec";
 import { FaUserGraduate } from "react-icons/fa6";
 import { LettersPullUp } from './../framer/LettersPullUp';
 
-const QualificationDetails = { q1: {
+const QualificationDetails = { 
+  q1: {
     from: "2020",
     to: "2021",
     inst: "CBSE",
@@ -17,9 +18,19 @@ const QualificationDetails = { q1: {
     inst: "AKTU",
     clg: "Galgotias College of Engineering and Technology",
     addr: "Noida, Uttar Pradesh",
-    disc2: "Currently pursuing a Bachelor of Technology in Computer Science Engineering with a specialization in Artificial intelligence and Machine Learning.",
+    // disc2: "Currently pursuing a Bachelor of Technology in Computer Science Engineering with a specialization in Artificial intelligence and Machine Learning.",
     
     cur: true,
+    },
+    q3: {
+    from: "August 2025",
+    to: "January 2026",
+    inst: "6 month Internship",
+    clg: "ReactJS Developer at WeAnalyz Technologies",
+    addr: "Bangalore, Karnataka (Remote)",
+    // disc2: "Currently pursuing a Bachelor of Technology in Computer Science Engineering with a specialization in Artificial intelligence and Machine Learning.",
+    
+    // cur: true,
     },
 }
 
@@ -53,7 +64,7 @@ function Qualification() {
           Qualifications - Education History
         </h1>
         <LettersPullUp 
-          text="Qualification" 
+          text="My Journey" 
           aria-hidden="true"
         />
       </div>
