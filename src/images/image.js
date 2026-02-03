@@ -34,7 +34,7 @@ import gitfound from '../assets/certificate/github-foundations.png'
 import ibmnew from '../assets/certificate/ibmnew.png'
 import springboot from '../assets/skills/Springboot.png'
 import mysql from '../assets/skills/MySQL.png'
-import redux from '../assets/skills/redux.png'
+import redux from '../assets/skills/Redux.png'
 
 export {
   html,css,js,react,c,figma,fm,springboot,mysql,redux,java,nxt,tailwind,gitfound,ibmnew,vite, apw,ex ,boot,fire,git,ibm ,github,Node, py,image,linkedin,acc,github1,insta,leetcode,mail,whatsapp,ms,ln,mui,mkty
