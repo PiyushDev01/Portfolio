@@ -28,7 +28,7 @@ function Footer() {
             <a href="#Home"> <h1 className=' text-4xl hidden md:block ' >
             <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" fill="none"><path fill="#ba68c8" d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" opacity=".4"></path><path fill="#ba68c8" d="M15.53 14.01c-.19 0-.38-.07-.53-.22l-3-3-3 3c-.29.29-.77.29-1.06 0a.754.754 0 010-1.06l3.53-3.53c.29-.29.77-.29 1.06 0l3.53 3.53c.29.29.29.77 0 1.06-.15.15-.34.22-.53.22z"></path></svg>
               </h1></a>
-            <p className="  text-xs md:text-lg font-fira text-slate-300 py-6">Design & Built by Piyush Vishwakarma &#169; 2025 </p>
+            <p className="  text-xs md:text-lg font-fira text-slate-300 py-6">Design & Built by Piyush Vishwakarma &#169; 2026 </p>
     </div>
     </>
   )

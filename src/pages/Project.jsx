@@ -27,6 +27,16 @@
       tech:[react, tailwind,ex, fire,],
       mobile: artifexphone
     },
+    Doing: {
+     profile: doingdp, 
+     image: doing, 
+     discr: "A modern productivity platform combining task management, coding practice tracking, and time management tools in a customizable widget-based interface. Built with React/TypeScript, featuring local data storage, comprehensive analytics, and integrations for LeetCode practice and Pomodoro sessions.",
+     link:"https://todotrack-dusky.vercel.app/",
+     gitlink:"https://github.com/PiyushDev01/todotrack",
+     tech:[react, fm, tailwind,],
+     mobile: doingphone
+   }
+   ,
     Uifry: {
       profile: uifrydp, 
       image: uifryimg, 
@@ -36,21 +46,11 @@
       tech:[react, tailwind],
       mobile: uifryphone
     },
-     Doing: {
-      profile: doingdp, 
-      image: doing, 
-      discr: "A modern productivity platform combining task management, coding practice tracking, and time management tools in a customizable widget-based interface. Built with React/TypeScript, featuring local data storage, comprehensive analytics, and integrations for LeetCode practice and Pomodoro sessions.",
-      link:"https://www.doing.works/",
-      gitlink:"https://github.com/PiyushDev01/todotrack",
-      tech:[react, fm, tailwind,],
-      mobile: doingphone
-    }
-    ,
     Portfolio: {
       profile: portdp, 
       image: portfolio, 
       discr: "This portfolio website showcases my Web development skills using React, Tailwind, and Firebase, featuring diverse projects and a focus on user-centric design.",
-      link:"https://piyushdev.me/",
+      link:"https://portfoliopiyush.vercel.app/",
       gitlink:"https://github.com/PiyushDev01/Portfolio",
       tech:[react, fm, tailwind,],
       mobile: portfoliophone
