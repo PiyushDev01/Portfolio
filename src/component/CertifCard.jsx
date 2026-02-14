@@ -68,15 +68,10 @@ function CertifCard(props) {
                 aria-label={`View ${title} certificate`}
             >
                 <button 
-                    className='flex gap-2 items-center shadow-rose-500 my-4 transition-all hover:border-purple-400 border-transparent border-2 w-fit px-4 py-2 rounded-full text-sm md:text-base bg-mybg text-zinc-200 font-light font-ubuntu'
+                    className='flex gap-2 items-center shadow-rose-500 my-4 transition-all hover:border-purple-400 border-transparent border-2 w-fit pl-4 pr-2 py-2 rounded-full text-sm md:text-sm bg-mybg text-zinc-200 font-light font-ubuntu'
                 >
-                    Show Credential 
-                    <span 
-                        className='text-xl text-purple-500'
-                        aria-hidden="true"
-                    >
-                        &#8599;
-                    </span>
+                    Verify 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path fill="#d9e3f0" d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" opacity=".4"></path><path fill="#d9e3f0" d="M10.74 16.28c-.19 0-.38-.07-.53-.22a.754.754 0 010-1.06l3-3-3-3a.754.754 0 010-1.06c.29-.29.77-.29 1.06 0l3.53 3.53c.29.29.29.77 0 1.06l-3.53 3.53c-.15.15-.34.22-.53.22z"></path></svg>
                 </button>
             </a>
         </SpotlightCard>

@@ -9,12 +9,12 @@ export function RotateWords({
   const [index, setIndex] = React.useState(0)
  
 React.useEffect(() => {
-const interval = setInterval(() => {
-setIndex((prevIndex) => (prevIndex + 1) % words.length)
-}, 3000)
-// Clean up interval on unmount
-return () => clearInterval(interval)
-}, [])
+    const interval = setInterval(() => {
+      setIndex((prevIndex) => (prevIndex + 1) % words.length)
+    }, 3000)
+    // Clean up interval on unmount
+    return () => clearInterval(interval)
+  }, [words])
 return (
  
 <div className="text-4xl text-center text-slate-50 font-custom sm:text-4xl font-normal tracking-tighter md:text-6xl md:leading-[4rem] w-fit flex items-center jusitfy-center gap-2">

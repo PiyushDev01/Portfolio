@@ -26,6 +26,8 @@ import apw from "../assets/skills/Appwrite.png"
 import py from "../assets/skills/Python.png"
 import ibm from "../assets/certificate/ibm.png"
 import acc from "../assets/certificate/acc.png"
+import awsc from "../assets/certificate/aws.png"
+import aws from "../assets/certificate/awsicon.png"
 import mkty from "../assets/social/Monkeytype.png"
 import fm from "../assets/skills/framer-motion.png"
 import nxt from '../assets/skills/Next.js.svg'
@@ -37,5 +39,5 @@ import mysql from '../assets/skills/MySQL.png'
 import redux from '../assets/skills/Redux.png'
 
 export {
-  html,css,js,react,c,figma,fm,springboot,mysql,redux,java,nxt,tailwind,gitfound,ibmnew,vite, apw,ex ,boot,fire,git,ibm ,github,Node, py,image,linkedin,acc,github1,insta,leetcode,mail,whatsapp,ms,ln,mui,mkty
+  html,css,js,react,c,figma,awsc,aws,fm,springboot,mysql,redux,java,nxt,tailwind,gitfound,ibmnew,vite, apw,ex ,boot,fire,git,ibm ,github,Node, py,image,linkedin,acc,github1,insta,leetcode,mail,whatsapp,ms,ln,mui,mkty
 };

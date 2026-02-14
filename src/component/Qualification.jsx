@@ -1,6 +1,7 @@
 import QualiSec from "./QualiSec";
 import { FaUserGraduate } from "react-icons/fa6";
 import { LettersPullUp } from './../framer/LettersPullUp';
+import internshipCert from './Internship Certificate Piyush.pdf';
 
 const QualificationDetails = { 
   q1: {
@@ -28,6 +29,7 @@ const QualificationDetails = {
     inst: "6 month Internship",
     clg: "ReactJS Developer at WeAnalyz Technologies",
     addr: "Bangalore, Karnataka (Remote)",
+    certLink: internshipCert,
     // disc2: "Currently pursuing a Bachelor of Technology in Computer Science Engineering with a specialization in Artificial intelligence and Machine Learning.",
     
     // cur: true,

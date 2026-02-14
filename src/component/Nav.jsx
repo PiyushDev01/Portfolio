@@ -1,21 +1,44 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./nav.css";
+import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 
 function Nav() {
   const [toggle, settoggle] = useState(false);
+  const [hidden, setHidden] = useState(false);
+  const { scrollY } = useScroll();
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    const previous = scrollY.getPrevious();
+    if (latest > previous && latest > 150) {
+      setHidden(true);
+    } else {
+      setHidden(false);
+    }
+  });
 
   const handletoggle = () => {
     settoggle(!toggle);
   };
   //   bg-[#11111b]
+
   return (
     <nav 
-      className="flex flex-col fixed items-center justify-center w-full md:h-[8rem] mt-10 md:mt-0 z-20"
+      className="flex flex-col fixed items-center justify-center w-full md:h-[8rem] mt-10 md:mt-0 z-20 pointer-events-none"
       aria-label="Main navigation"
     >
-      <div
+      <motion.div
+        variants={{
+            visible: { y: 0 },
+            hidden: { y: "-200%" },
+        }}
+        animate={hidden ? "hidden" : "visible"}
+        transition={{
+            type: "spring",
+            stiffness: 260,
+            damping: 20,
+        }}
         id="nav"
-        className="bg-zinc-800/50 backdrop-blur-sm p-4 hidden rounded-full w-fit md:flex flex-row items-center px-[1rem] justify-between"
+        className="bg-zinc-800/50 backdrop-blur-sm p-4 hidden rounded-full w-fit md:flex flex-row items-center px-[1rem] justify-between pointer-events-auto"
         role="navigation"
         aria-label="Desktop navigation"
       >
@@ -96,12 +119,12 @@ function Nav() {
             <div className="bar bar--bottom"></div>
           </label>
         </div>
-      </div>
+      </motion.div>
 
       {/* navbar for mobile view */}
       <div
         id="mobnav"
-        className={`overflow-hidden flex items-center justify-center rounded-t-2xl h-[10vh] bottom-0 transition-all -z-10 md:hidden fixed w-full bg-zinc-800/50 backdrop-blur-lg ${toggle ? 'h-[320px]' : ''}`}
+        className={`overflow-hidden flex items-center justify-center rounded-t-2xl h-[10vh] bottom-0 transition-all -z-10 md:hidden fixed w-full bg-zinc-800/50 backdrop-blur-lg pointer-events-auto ${toggle ? 'h-[320px]' : ''}`}
         role="navigation"
         aria-label="Mobile navigation"
         aria-hidden={!toggle}

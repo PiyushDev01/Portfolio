@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import fadeIn from "../framer/fadein.js";
 import CertifCard from '../component/CertifCard.jsx';
-import { acc, ibm, ln, ms, github1, gitfound, ibmnew } from '../images/image.js';
+import { acc,awsc,aws, ibm, ln, ms, github1, gitfound, ibmnew } from '../images/image.js';
 import ibmcerti from "./Ibmcertificate.pdf";
 import resume from "./Piyush_Vishwakarma.pdf";
 
@@ -29,12 +29,20 @@ const certificatesDetail = {
         icons:[github1],
         bgicon:gitfound
     },
-    accenture:{
-        title:"Accenture",
-        disc:"Digital Skills: Artificial Intelligence",
-        link:"https://www.futurelearn.com/certificates/jmsiib5",
-        icons:[acc],
-        bgicon:acc
+    // accenture:{
+    //     title:"Accenture",
+    //     disc:"Digital Skills: Artificial Intelligence",
+    //     link:"https://www.futurelearn.com/certificates/jmsiib5",
+    //     icons:[acc],
+    //     bgicon:acc
+    // }
+    // ,
+    aws:{
+        title:"AWS Academy",
+        disc:"Cloud Foundations",
+        link:"https://www.credly.com/badges/e3618beb-d2cb-44f4-8444-fb1cec4f7cef/public_url",
+        icons:[aws],
+        bgicon:awsc
     }
 }
 
