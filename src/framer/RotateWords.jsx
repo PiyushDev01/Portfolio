@@ -1,9 +1,11 @@
 import * as React from "react"
 import { AnimatePresence, motion } from "framer-motion"
  
+const defaultWords = ["Code", "Design"]
+
 export function RotateWords({
   text = "I",
-  words = ["Code", "Design"],
+  words = defaultWords,
   endtext = "for Web",
 }) {
   const [index, setIndex] = React.useState(0)
@@ -17,7 +19,7 @@ React.useEffect(() => {
   }, [words])
 return (
  
-<div className="text-4xl text-center text-slate-50 font-custom sm:text-4xl font-normal tracking-tighter md:text-6xl md:leading-[4rem] w-fit flex items-center jusitfy-center gap-2">
+<div className="text-4xl text-center text-slate-50 font-custom sm:text-4xl font-normal tracking-tighter md:text-6xl md:leading-[4rem] w-fit flex items-center justify-center gap-2">
   {text}{' '}
   <AnimatePresence mode="wait">
     <motion.p
